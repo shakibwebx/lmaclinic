@@ -1,0 +1,151 @@
+/* PSD Design Adjustments - Pixel Perfect Matching */
+
+/* ========================================
+   1. PHONE NUMBER STYLING (Gold/Beige Color)
+   ======================================== */
+.elementor-icon-list-text {
+    color: #C9B382 !important; /* Gold/beige color matching button */
+    font-weight: 500 !important;
+    font-size: 15px !important;
+}
+
+/* ========================================
+   2. MAKE A BOOKING BUTTON STYLING
+   ======================================== */
+.elementor-button-link.elementor-button.elementor-size-sm {
+    background-color: #C9B382 !important; /* Gold/beige background */
+    color: #1a1a1a !important;
+    border-radius: 4px !important;
+    padding: 12px 28px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+}
+
+.elementor-button-link.elementor-button.elementor-size-sm:hover {
+    background-color: #B8A272 !important;
+    transform: translateY(-1px);
+}
+
+/* ========================================
+   3. HERO TEXT - LINE BREAKS & CAPITALIZATION
+   ======================================== */
+
+/* Main heading quote */
+.elementor-element-7e1d095 .elementor-heading-title,
+.elementor-element-1e0df32 .elementor-heading-title {
+    font-size: 48px !important;
+    line-height: 1.25 !important;
+    font-weight: 300 !important; /* Lighter weight as per PSD */
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+}
+
+/* Doctor name - Remove all caps, use proper capitalization */
+.mainHeading {
+    text-transform: none !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    color: #ffffff !important;
+}
+
+/* Doctor title - Remove all caps, use proper capitalization */
+.firstMainDesc {
+    text-transform: none !important;
+    font-weight: 300 !important;
+    font-size: 16px !important;
+    color: #e0e0e0 !important;
+    line-height: 1.5 !important;
+}
+
+/* ========================================
+   4. HIDE CAROUSEL NAVIGATION ARROWS
+   ======================================== */
+.e-n-carousel .swiper-button-prev,
+.e-n-carousel .swiper-button-next,
+.elementor-swiper-button-prev,
+.elementor-swiper-button-next {
+    display: none !important;
+}
+
+/* Also hide arrows via Elementor classes */
+.elementor-arrows-position-inside .swiper-button-prev,
+.elementor-arrows-position-inside .swiper-button-next {
+    display: none !important;
+}
+
+/* ========================================
+   5. TEXT POSITIONING & LAYOUT
+   ======================================== */
+
+/* Adjust hero text container positioning */
+.elementor-element-b1841ee {
+    padding-left: 80px !important;
+    padding-top: 200px !important;
+    max-width: 650px !important;
+}
+
+/* Adjust text alignment */
+.elementor-element-1e46840 {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+/* ========================================
+   6. TYPOGRAPHY FINE-TUNING
+   ======================================== */
+
+/* Main quote typography */
+h1.elementor-heading-title {
+    font-weight: 300 !important; /* Lighter weight */
+    letter-spacing: 0.5px !important;
+    line-height: 1.25 !important;
+}
+
+/* Subtitle text */
+.firstSlideDesc,
+.sliderDescription {
+    margin-top: 20px !important;
+    line-height: 1.6 !important;
+}
+
+/* ========================================
+   7. LOGO ADJUSTMENTS (if needed)
+   ======================================== */
+.mainLogo {
+    max-height: 80px !important;
+    width: auto !important;
+}
+
+/* ========================================
+   8. NAVIGATION MENU SPACING
+   ======================================== */
+.navbar-nav > li > a {
+    padding: 15px 18px !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* ========================================
+   9. RESPONSIVE ADJUSTMENTS
+   ======================================== */
+@media (max-width: 1024px) {
+    .elementor-element-7e1d095 .elementor-heading-title::before {
+        font-size: 36px;
+    }
+
+    .elementor-element-b1841ee {
+        padding-left: 40px !important;
+        padding-top: 150px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .elementor-element-7e1d095 .elementor-heading-title::before {
+        font-size: 28px;
+    }
+
+    .elementor-element-b1841ee {
+        padding-left: 20px !important;
+        padding-top: 100px !important;
+    }
+}

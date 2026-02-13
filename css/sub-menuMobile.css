@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Bangla-Regular";
+    src: url("../fonts/Bangla-Regular/Bangla-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bangla-Bold";
+    src: url("../fonts/Bangla-Bold/Bangla-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bangla-Extra";
+    src: url("../fonts/Bangla-Extra/Bangla-Extra.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gurmukhi";
+    src: url("../fonts/Gurmukhi/GurmukhiMN.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+.elementor-2465 .elementor-element.elementor-element-1c4f8e9 {
+    --display: flex;
+}
+
+.elementor-2465 .elementor-element.elementor-element-b3694ab>.elementor-widget-container {
+    margin: 0px 0px -6px 0px;
+}
+
+.elementor-2465 .elementor-element.elementor-element-b3694ab .jet-listing-dynamic-link__link {
+    align-self: flex-start;
+    font-size: 14px;
+    font-weight: 500;
+    flex-direction: row;
+    /* color: black; */
+    color: #4d4736;
+}
+
+.elementor-2465 .elementor-element.elementor-element-b3694ab .jet-listing-dynamic-link__link:hover {
+    color: var(--e-global-color-primary);
+}
+
+.elementor-2465 .elementor-element.elementor-element-b3694ab .jet-listing-dynamic-link__icon {
+    order: 1;
+}
+
+@media(max-width:576px) {
+    .elementor-2465 .elementor-element.elementor-element-b3694ab .jet-listing-dynamic-link__link {
+        font-size: 16px;
+    }
+}
+
+.elementor-element.elementor-element-43be8cb.e-flex.e-con-boxed.e-con.e-parent {
+    padding-left: 20px;
+}
+
+
+.dropdownHeading
+{
+    color: #4d4736;
+    padding-top: 15px;
+       font-family: "Bangla-Extra";
+      font-size: 18px;
+        text-shadow: 0 0 0.5px black;
+}
+
+.center-divider {
+  width: 90%;      /* control length */
+  margin-top: 30px !important;
+   margin-bottom: 15px !important;
+    margin-left: auto !important;
+     margin-right: auto !important;
+  border: none;
+  border-top: 1px solid #000; /* color & thickness */
+}
+
+
+.divider-dont-show {
+  width: 90%;      /* control length */
+  margin-top: 15px !important;
+   margin-bottom: 15px !important;
+    margin-left: auto !important;
+     margin-right: auto !important;
+  border: none;
+  border-top: 1px solid white; /* color & thickness */
+}

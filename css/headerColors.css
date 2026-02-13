@@ -1,0 +1,541 @@
+@font-face {
+	font-family: "Bangla-Regular";
+	src: url("../fonts/Bangla-Regular/Bangla-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bangla-Bold";
+	src: url("../fonts/Bangla-Bold/Bangla-Bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gurmukhi";
+	src: url("../fonts/Gurmukhi/GurmukhiMN.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+
+.elementor-kit-87 {
+	--e-global-color-primary: #AF9A5B;
+	--e-global-color-secondary: #60563A;
+	--e-global-color-text: #54534D;
+	--e-global-color-accent: #60563A;
+	--e-global-color-ce9afc4: #AF9A5B;
+	--e-global-color-e4fd44a: #E7DCBB;
+	--e-global-color-2de53a8: #F3EFE2;
+	--e-global-color-6802f5a: #857873;
+	--e-global-color-af99fbb: #CECBC4;
+	--e-global-color-7b5714a: #B3B7A1;
+	--e-global-color-7d778fc: #CED1C9;
+	--e-global-color-19a6dcd: #000000;
+	--e-global-color-adfbb95: #222222;
+	--e-global-color-d0848eb: #54534D;
+	--e-global-color-7bb09a5: #76736E;
+	--e-global-color-26330d8: #AAAAAA;
+	--e-global-color-4847d2d: #EEEEEE;
+	--e-global-color-fdade66: #FFFFFF;
+	--e-global-color-9344d2a: #3E3725;
+	--e-global-color-a7d1b9c: #60563A;
+	--e-global-color-25f909e: #CEC199;
+	--e-global-color-8c226b4: #FFFFFF00;
+	--e-global-color-e4f5842: #FFFFFF1A;
+	--e-global-color-f131473: #FFFFFF33;
+	--e-global-color-f3ba5bd: #FFFFFF4D;
+	--e-global-color-5ebafc8: #FFFFFF66;
+	--e-global-color-a6d9f72: #FFFFFF80;
+	--e-global-color-c85eb4f: #FFFFFF99;
+	--e-global-color-175f200: #FFFFFFB2;
+	--e-global-color-eeacd4f: #FFFFFFCC;
+	--e-global-color-3d9b07a: #FFFFFFE5;
+	--e-global-color-4e462ef: #AF9A5B1A;
+	--e-global-color-1da1afa: #AF9A5B33;
+	--e-global-color-3ec10f9: #AF9A5B4D;
+	--e-global-color-745362e: #AF9A5B66;
+	--e-global-color-8376876: #AF9A5B80;
+	--e-global-color-6c47e01: #AF9A5B99;
+	--e-global-color-5792195: #AF9A5BB2;
+	--e-global-color-0f9fea8: #00000099;
+	--e-global-color-19ad1e2: #F2EA94;
+	--e-global-color-07d2c2e: #FAD5FC;
+	--e-global-typography-primary-font-family: "Sangbleu OG Sans";
+	--e-global-typography-primary-font-weight: 300;
+	--e-global-typography-primary-text-transform: uppercase;
+	--e-global-typography-secondary-font-family: "Museo Sans";
+	--e-global-typography-secondary-font-weight: 500;
+	--e-global-typography-secondary-text-transform: uppercase;
+	--e-global-typography-secondary-letter-spacing: 0.03em;
+	--e-global-typography-text-font-family: "Museo Sans";
+	--e-global-typography-text-font-weight: 100;
+	--e-global-typography-accent-font-family: "Sangbleu OG Sans";
+	--e-global-typography-accent-font-weight: 300;
+	--e-global-typography-accent-font-style: italic;
+	--e-global-typography-09740bb-font-family: "Sangbleu OG Sans";
+	--e-global-typography-09740bb-font-size: 96px;
+	--e-global-typography-09740bb-font-weight: 300;
+	--e-global-typography-09740bb-text-transform: uppercase;
+	--e-global-typography-09740bb-text-decoration: none;
+	--e-global-typography-09740bb-line-height: 96px;
+	--e-global-typography-09740bb-letter-spacing: -0.02em;
+	--e-global-typography-d70cfb9-font-family: "Sangbleu OG Sans";
+	--e-global-typography-d70cfb9-font-size: 56px;
+	--e-global-typography-d70cfb9-font-weight: 300;
+	--e-global-typography-d70cfb9-text-transform: uppercase;
+	--e-global-typography-d70cfb9-text-decoration: none;
+	--e-global-typography-d70cfb9-line-height: 72px;
+	--e-global-typography-d70cfb9-letter-spacing: 0em;
+	--e-global-typography-898a219-font-family: "Sangbleu OG Sans";
+	--e-global-typography-898a219-font-size: 48px;
+	--e-global-typography-898a219-font-weight: 300;
+	--e-global-typography-898a219-text-transform: uppercase;
+	--e-global-typography-898a219-text-decoration: none;
+	--e-global-typography-898a219-line-height: 64px;
+	--e-global-typography-898a219-letter-spacing: 0em;
+	--e-global-typography-ca9abe7-font-family: "Sangbleu OG Sans";
+	--e-global-typography-ca9abe7-font-size: 36px;
+	--e-global-typography-ca9abe7-font-weight: 300;
+	--e-global-typography-ca9abe7-text-transform: uppercase;
+	--e-global-typography-ca9abe7-text-decoration: none;
+	--e-global-typography-ca9abe7-line-height: 48px;
+	--e-global-typography-ca9abe7-letter-spacing: 0em;
+	--e-global-typography-a939cb9-font-family: "Sangbleu OG Sans";
+	--e-global-typography-a939cb9-font-size: 36px;
+	--e-global-typography-a939cb9-font-weight: 300;
+	--e-global-typography-a939cb9-text-transform: none;
+	--e-global-typography-a939cb9-text-decoration: none;
+	--e-global-typography-a939cb9-line-height: 48px;
+	--e-global-typography-a939cb9-letter-spacing: 0em;
+	--e-global-typography-4aad1b2-font-family: "Sangbleu OG Sans";
+	--e-global-typography-4aad1b2-font-size: 32px;
+	--e-global-typography-4aad1b2-font-weight: 300;
+	--e-global-typography-4aad1b2-text-transform: uppercase;
+	--e-global-typography-4aad1b2-text-decoration: none;
+	--e-global-typography-4aad1b2-line-height: 36px;
+	--e-global-typography-4aad1b2-letter-spacing: 0em;
+	--e-global-typography-fb4bc85-font-family: "Sangbleu OG Sans";
+	--e-global-typography-fb4bc85-font-size: 32px;
+	--e-global-typography-fb4bc85-font-weight: 300;
+	--e-global-typography-fb4bc85-text-transform: none;
+	--e-global-typography-fb4bc85-text-decoration: none;
+	--e-global-typography-fb4bc85-line-height: 48px;
+	--e-global-typography-fb4bc85-letter-spacing: 0em;
+	--e-global-typography-08d8d0f-font-family: "Museo Sans";
+	--e-global-typography-08d8d0f-font-size: 24px;
+	--e-global-typography-08d8d0f-font-weight: 100;
+	--e-global-typography-08d8d0f-text-transform: none;
+	--e-global-typography-08d8d0f-text-decoration: none;
+	--e-global-typography-08d8d0f-line-height: 32px;
+	--e-global-typography-08d8d0f-letter-spacing: 0em;
+	--e-global-typography-10db86c-font-family: "Museo Sans";
+	--e-global-typography-10db86c-font-size: 20px;
+	--e-global-typography-10db86c-font-weight: 100;
+	--e-global-typography-10db86c-text-transform: uppercase;
+	--e-global-typography-10db86c-text-decoration: none;
+	--e-global-typography-10db86c-line-height: 28px;
+	--e-global-typography-10db86c-letter-spacing: 0.03em;
+	--e-global-typography-0d0cb23-font-family: "Museo Sans";
+	--e-global-typography-0d0cb23-font-size: 20px;
+	--e-global-typography-0d0cb23-font-weight: 300;
+	--e-global-typography-0d0cb23-text-transform: none;
+	--e-global-typography-0d0cb23-text-decoration: none;
+	--e-global-typography-0d0cb23-line-height: 28px;
+	--e-global-typography-0d0cb23-letter-spacing: 0em;
+	--e-global-typography-d1fab1b-font-family: "Museo Sans";
+	--e-global-typography-d1fab1b-font-size: 20px;
+	--e-global-typography-d1fab1b-font-weight: 300;
+	--e-global-typography-d1fab1b-text-transform: uppercase;
+	--e-global-typography-d1fab1b-text-decoration: none;
+	--e-global-typography-d1fab1b-line-height: 1.4em;
+	--e-global-typography-d1fab1b-letter-spacing: 0.02em;
+	--e-global-typography-a7aef55-font-family: "Museo Sans";
+	--e-global-typography-a7aef55-font-size: 18px;
+	--e-global-typography-a7aef55-font-weight: 100;
+	--e-global-typography-a7aef55-text-transform: none;
+	--e-global-typography-a7aef55-text-decoration: none;
+	--e-global-typography-a7aef55-line-height: 26px;
+	--e-global-typography-a7aef55-letter-spacing: 0em;
+	--e-global-typography-d460d4f-font-family: "Museo Sans";
+	--e-global-typography-d460d4f-font-size: 18px;
+	--e-global-typography-d460d4f-font-weight: 300;
+	--e-global-typography-d460d4f-text-transform: none;
+	--e-global-typography-d460d4f-text-decoration: none;
+	--e-global-typography-d460d4f-line-height: 26px;
+	--e-global-typography-d460d4f-letter-spacing: 0em;
+	--e-global-typography-6f0da46-font-family: "Museo Sans";
+	--e-global-typography-6f0da46-font-size: 18px;
+	--e-global-typography-6f0da46-font-weight: 300;
+	--e-global-typography-6f0da46-text-transform: uppercase;
+	--e-global-typography-6f0da46-text-decoration: none;
+	--e-global-typography-6f0da46-line-height: 26px;
+	--e-global-typography-6f0da46-letter-spacing: 0.03em;
+	--e-global-typography-bbee484-font-family: "Museo Sans";
+	--e-global-typography-bbee484-font-size: 18px;
+	--e-global-typography-bbee484-font-weight: 500;
+	--e-global-typography-bbee484-text-transform: uppercase;
+	--e-global-typography-bbee484-text-decoration: none;
+	--e-global-typography-bbee484-line-height: 26px;
+	--e-global-typography-bbee484-letter-spacing: 0.03em;
+	--e-global-typography-54cd7c2-font-family: "Museo Sans";
+	--e-global-typography-54cd7c2-font-size: 16px;
+	--e-global-typography-54cd7c2-font-weight: 100;
+	--e-global-typography-54cd7c2-text-transform: none;
+	--e-global-typography-54cd7c2-text-decoration: none;
+	--e-global-typography-54cd7c2-line-height: 24px;
+	--e-global-typography-54cd7c2-letter-spacing: 0em;
+	--e-global-typography-d280c54-font-family: "Museo Sans";
+	--e-global-typography-d280c54-font-size: 16px;
+	--e-global-typography-d280c54-font-weight: 500;
+	--e-global-typography-d280c54-text-transform: uppercase;
+	--e-global-typography-d280c54-text-decoration: none;
+	--e-global-typography-d280c54-line-height: 24px;
+	--e-global-typography-d280c54-letter-spacing: 0.03em;
+	--e-global-typography-50265e5-font-family: "Museo Sans";
+	--e-global-typography-50265e5-font-size: 14px;
+	--e-global-typography-50265e5-font-weight: 100;
+	--e-global-typography-50265e5-text-transform: none;
+	--e-global-typography-50265e5-text-decoration: none;
+	--e-global-typography-50265e5-line-height: 18px;
+	--e-global-typography-50265e5-letter-spacing: 0em;
+	--e-global-typography-d2496a5-font-family: "Museo Sans";
+	--e-global-typography-d2496a5-font-size: 14px;
+	--e-global-typography-d2496a5-font-weight: 100;
+	--e-global-typography-d2496a5-text-transform: uppercase;
+	--e-global-typography-d2496a5-text-decoration: none;
+	--e-global-typography-d2496a5-line-height: 18px;
+	--e-global-typography-d2496a5-letter-spacing: 0.03em;
+	--e-global-typography-ebab3c9-font-family: "Museo Sans";
+	--e-global-typography-ebab3c9-font-size: 14px;
+	--e-global-typography-ebab3c9-font-weight: 300;
+	--e-global-typography-ebab3c9-text-transform: none;
+	--e-global-typography-ebab3c9-text-decoration: none;
+	--e-global-typography-ebab3c9-line-height: 18px;
+	--e-global-typography-ebab3c9-letter-spacing: 0em;
+	--e-global-typography-3bd5676-font-family: "Museo Sans";
+	--e-global-typography-3bd5676-font-size: 14px;
+	--e-global-typography-3bd5676-font-weight: 300;
+	--e-global-typography-3bd5676-text-transform: uppercase;
+	--e-global-typography-3bd5676-text-decoration: none;
+	--e-global-typography-3bd5676-line-height: 18px;
+	--e-global-typography-3bd5676-letter-spacing: 0.03em;
+	--e-global-typography-78401de-font-family: "Museo Sans";
+	--e-global-typography-78401de-font-size: 14px;
+	--e-global-typography-78401de-font-weight: 500;
+	--e-global-typography-78401de-text-transform: uppercase;
+	--e-global-typography-78401de-text-decoration: none;
+	--e-global-typography-78401de-line-height: 18px;
+	--e-global-typography-78401de-letter-spacing: 0.03em;
+	--e-global-typography-d4fa788-font-family: "Museo Sans";
+	--e-global-typography-d4fa788-font-size: 12px;
+	--e-global-typography-d4fa788-font-weight: 500;
+	--e-global-typography-d4fa788-text-transform: uppercase;
+	--e-global-typography-d4fa788-text-decoration: none;
+	--e-global-typography-d4fa788-line-height: 18px;
+	--e-global-typography-d4fa788-letter-spacing: 0.03em;
+	--e-global-typography-3d75fdb-font-family: "Museo Sans";
+	--e-global-typography-3d75fdb-font-size: 10px;
+	--e-global-typography-3d75fdb-font-weight: 300;
+	--e-global-typography-3d75fdb-text-transform: uppercase;
+	--e-global-typography-3d75fdb-text-decoration: none;
+	--e-global-typography-3d75fdb-line-height: 14px;
+	--e-global-typography-3d75fdb-letter-spacing: 0.03em;
+	/* font-family: "Museo Sans", Sans-serif; */
+	font-size: 15px;
+	font-weight: 300;
+
+	font-family: "Bangla-Bold"
+
+}
+
+.elementor-kit-87 e-page-transition {
+	background-color: #FFBC7D;
+}
+
+.elementor-kit-87 a {
+	color: var(--e-global-color-9344d2a);
+}
+
+.elementor-kit-87 h2 {
+	color: var(--e-global-color-6802f5a);
+	font-family: "Sangbleu OG Sans", Sans-serif;
+	font-size: 45px;
+	line-height: 57px;
+}
+
+.elementor-kit-87 h3 {
+	color: var(--e-global-color-primary);
+	font-size: 18px;
+}
+
+.elementor-kit-87 h5 {
+	color: var(--e-global-color-ce9afc4);
+	font-size: 18px;
+}
+
+.elementor-kit-87 button,
+.elementor-kit-87 input[type="button"],
+.elementor-kit-87 input[type="submit"],
+.elementor-kit-87 .elementor-button {
+	font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
+	font-weight: var(--e-global-typography-secondary-font-weight);
+	text-transform: var(--e-global-typography-secondary-text-transform);
+	letter-spacing: var(--e-global-typography-secondary-letter-spacing);
+	border-radius: 0px 0px 0px 0px;
+}
+
+.e-con {
+	--container-default-padding-top: 0px;
+	--container-default-padding-right: 0px;
+	--container-default-padding-bottom: 0px;
+	--container-default-padding-left: 0px;
+}
+
+.elementor-widget:not(:last-child) {
+	margin-block-end: 0px;
+}
+
+.elementor-element {
+	--widgets-spacing: 0px 0px;
+	--widgets-spacing-row: 0px;
+	--widgets-spacing-column: 0px;
+}
+
+	{}
+
+h1.entry-title {
+	display: var(--page-title-display);
+}
+
+.site-header .site-branding {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.site-header {
+	padding-inline-end: 0px;
+	padding-inline-start: 0px;
+}
+
+.site-footer .site-branding {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+@media(max-width:1280px) {
+
+	.elementor-kit-87 button,
+	.elementor-kit-87 input[type="button"],
+	.elementor-kit-87 input[type="submit"],
+	.elementor-kit-87 .elementor-button {
+		letter-spacing: var(--e-global-typography-secondary-letter-spacing);
+	}
+}
+
+@media(max-width:1024px) {
+	.elementor-kit-87 {
+		--e-global-typography-09740bb-font-size: 64px;
+		--e-global-typography-09740bb-line-height: 67px;
+		--e-global-typography-d70cfb9-font-size: 48px;
+		--e-global-typography-d70cfb9-line-height: 56px;
+		--e-global-typography-898a219-font-size: 48px;
+		--e-global-typography-898a219-line-height: 56px;
+		--e-global-typography-ca9abe7-font-size: 32px;
+		--e-global-typography-ca9abe7-line-height: 40px;
+		--e-global-typography-a939cb9-font-size: 32px;
+		--e-global-typography-a939cb9-line-height: 40px;
+		--e-global-typography-4aad1b2-font-size: 28px;
+		--e-global-typography-4aad1b2-line-height: 36px;
+		--e-global-typography-fb4bc85-font-size: 28px;
+		--e-global-typography-fb4bc85-line-height: 36px;
+		--e-global-typography-08d8d0f-font-size: 24px;
+		--e-global-typography-08d8d0f-line-height: 32px;
+		--e-global-typography-10db86c-font-size: 20px;
+		--e-global-typography-10db86c-line-height: 28px;
+		--e-global-typography-0d0cb23-font-size: 20px;
+		--e-global-typography-0d0cb23-line-height: 28px;
+		--e-global-typography-d1fab1b-font-size: 20px;
+		--e-global-typography-d1fab1b-line-height: 28px;
+	}
+
+	.elementor-kit-87 button,
+	.elementor-kit-87 input[type="button"],
+	.elementor-kit-87 input[type="submit"],
+	.elementor-kit-87 .elementor-button {
+		letter-spacing: var(--e-global-typography-secondary-letter-spacing);
+	}
+
+	.elementor-section.elementor-section-boxed>.elementor-container {
+		max-width: 1024px;
+	}
+
+	.e-con {
+		--container-max-width: 1024px;
+	}
+}
+
+@media(max-width:576px) {
+	.elementor-kit-87 {
+		--e-global-typography-09740bb-font-size: 36px;
+		--e-global-typography-09740bb-line-height: 40px;
+		--e-global-typography-d70cfb9-font-size: 36px;
+		--e-global-typography-d70cfb9-line-height: 40px;
+		--e-global-typography-898a219-font-size: 36px;
+		--e-global-typography-898a219-line-height: 40px;
+		--e-global-typography-ca9abe7-font-size: 32px;
+		--e-global-typography-ca9abe7-line-height: 40px;
+		--e-global-typography-a939cb9-font-size: 28px;
+		--e-global-typography-a939cb9-line-height: 36px;
+		--e-global-typography-4aad1b2-font-size: 28px;
+		--e-global-typography-4aad1b2-line-height: 36px;
+		--e-global-typography-fb4bc85-font-size: 24px;
+		--e-global-typography-fb4bc85-line-height: 32px;
+		--e-global-typography-08d8d0f-font-size: 20px;
+		--e-global-typography-08d8d0f-line-height: 28px;
+		--e-global-typography-10db86c-font-size: 20px;
+		--e-global-typography-10db86c-line-height: 28px;
+		--e-global-typography-0d0cb23-font-size: 20px;
+		--e-global-typography-0d0cb23-line-height: 28px;
+		--e-global-typography-d1fab1b-font-size: 20px;
+		--e-global-typography-d1fab1b-line-height: 28px;
+		--e-global-typography-6f0da46-line-height: 28px;
+	}
+
+	.elementor-kit-87 button,
+	.elementor-kit-87 input[type="button"],
+	.elementor-kit-87 input[type="submit"],
+	.elementor-kit-87 .elementor-button {
+		letter-spacing: var(--e-global-typography-secondary-letter-spacing);
+	}
+
+	.elementor-section.elementor-section-boxed>.elementor-container {
+		max-width: 767px;
+	}
+
+	.e-con {
+		--container-max-width: 767px;
+	}
+}
+
+/* Start custom CSS */
+.jet-mega-menu-mega-container__inner,
+.jet-mega-menu-sub-menu {
+	box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* End custom CSS */
+/* Start Custom Fonts CSS */
+@font-face {
+	font-family: 'Sangbleu OG Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-Light-WebS.eot');
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-Light-WebS.eot?#iefix') format('embedded-opentype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-Light-WebS.woff2') format('woff2'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-Light-WebS.woff') format('woff'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-Light-WebS.ttf') format('truetype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-Light-WebS.svg#SangbleuOGSans') format('svg');
+}
+
+@font-face {
+	font-family: 'Sangbleu OG Sans';
+	font-style: italic;
+	font-weight: 300;
+	font-display: auto;
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-LightItalic-WebS.eot');
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-LightItalic-WebS.eot?#iefix') format('embedded-opentype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-LightItalic-WebS.woff2') format('woff2'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-LightItalic-WebS.woff') format('woff'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-LightItalic-WebS.ttf') format('truetype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/SangBleuOGSans-LightItalic-WebS.svg#SangbleuOGSans') format('svg');
+}
+
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */
+/* @font-face {
+	font-family: 'Museo Sans';
+	font-style: normal;
+	font-weight: 100;
+	font-display: auto;
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100.eot');
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100.eot?#iefix') format('embedded-opentype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100.woff2') format('woff2'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100.woff') format('woff'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100.ttf') format('truetype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100.svg#MuseoSans') format('svg');
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	font-style: italic;
+	font-weight: 100;
+	font-display: auto;
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100Italic.eot');
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100Italic.eot?#iefix') format('embedded-opentype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100Italic.woff2') format('woff2'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100Italic.woff') format('woff'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100Italic.ttf') format('truetype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-100Italic.svg#MuseoSans') format('svg');
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300.eot');
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300.eot?#iefix') format('embedded-opentype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300.woff2') format('woff2'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300.woff') format('woff'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300.ttf') format('truetype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300.svg#MuseoSans') format('svg');
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	font-style: italic;
+	font-weight: 300;
+	font-display: auto;
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300Italic.eot');
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300Italic.eot?#iefix') format('embedded-opentype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300Italic.woff2') format('woff2'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300Italic.woff') format('woff'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300Italic.ttf') format('truetype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-300Italic.svg#MuseoSans') format('svg');
+}
+
+ @font-face {
+	font-family: 'Museo Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500.eot');
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500.woff2') format('woff2'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500.woff') format('woff'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500.ttf') format('truetype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500.svg#MuseoSans') format('svg');
+} 
+
+ @font-face {
+	font-family: 'Museo Sans';
+	font-style: italic;
+	font-weight: 500;
+	font-display: auto;
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500Italic.eot');
+	src: url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500Italic.eot?#iefix') format('embedded-opentype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500Italic.woff2') format('woff2'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500Italic.woff') format('woff'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500Italic.ttf') format('truetype'),
+		url('https://rakusclinic.com/wp-content/uploads/2025/03/MuseoSans-500Italic.svg#MuseoSans') format('svg');
+}  */
+
+/* End Custom Fonts CSS */
