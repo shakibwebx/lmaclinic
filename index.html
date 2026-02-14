@@ -256,9 +256,20 @@
         @media (max-width: 768px) {
             .hero-text {
                 font-size: 2rem;
+                margin-top: 28rem;
             }
             .slide {
-                height: 600px !important;
+                height: 100vh !important;
+            }
+            .slide img {
+                margin-top: 60px;
+                height: calc(100% - 60px);
+            }
+        }
+
+        @media (min-width: 769px) {
+            .slide img {
+                margin-top: 0 !important;
             }
         }
 
@@ -304,6 +315,15 @@
             #mobileMenu {
                 font-size: 0.75rem;
             }
+        }
+
+        /* Mobile menu dropdown arrow color */
+        .mobile-dropdown svg {
+            color: #000000;
+        }
+
+        .mobile-dropdown a:hover {
+            color: #A29061 !important;
         }
 
         .slider-container {
@@ -490,8 +510,33 @@
 <body class="bg-white">
 
     <!-- Header -->
-    <header class="absolute top-0 left-0 w-full z-50 bg-gradient-to-b from-black/60 to-transparent">
-        <div class="header-container py-3">
+    <header class="absolute top-0 left-0 w-full z-50 lg:bg-gradient-to-b lg:from-black/60 lg:to-transparent">
+        <!-- Mobile Header - White Background -->
+        <div class="lg:hidden bg-white py-3 px-4">
+            <div class="flex items-center justify-between">
+                <!-- Hamburger Menu - Left -->
+                <button class="text-[#a29061]" onclick="toggleMobileMenu()">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Logo - Center -->
+                <div class="flex items-center">
+                    <img src="images/blackLogo.png" alt="London Medical & Aesthetic Clinic"
+                        class="h-14 w-auto">
+                </div>
+
+                <!-- Phone Icon - Right -->
+                <a href="tel:+442083421100" class="flex items-center">
+                    <img src="images/phone.svg" alt="Phone" class="w-6 h-6">
+                </a>
+            </div>
+        </div>
+
+        <!-- Desktop Header -->
+        <div class="hidden lg:block header-container py-3">
             <!-- First Row: Logo, Phone & Booking Button -->
             <div class="flex items-center justify-between mb-2">
                 <!-- Logo -->
@@ -501,7 +546,7 @@
                 </div>
 
                 <!-- Contact and CTA - Desktop -->
-                <div class="hidden lg:flex items-center justify-center space-x-8">
+                <div class="flex items-center justify-center space-x-8">
                     <div class="flex items-center text-white">
                         <img src="images/phone.svg" alt="Phone" class="w-6 h-6 mr-2">
                         <span class="text-lg">+44 (0) 208 342 1100</span>
@@ -512,18 +557,10 @@
                         Make a Booking
                     </button>
                 </div>
-
-                <!-- Mobile Menu Button -->
-                <button class="lg:hidden text-white" onclick="toggleMobileMenu()">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
             </div>
 
             <!-- Second Row: Navigation Menu -->
-            <div class="hidden lg:flex justify-end nav-wrapper">
+            <div class="flex justify-end nav-wrapper">
                 <nav class="flex items-center space-x-6 text-white text-base uppercase">
                     <!-- About -->
                     <div class="has-dropdown">
@@ -741,21 +778,11 @@
                     <a href="#contact" class="nav-link hover:text-[#a29061]">CONTACT</a>
                 </nav>
             </div>
+        </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden lg:hidden mt-4 bg-black/90 p-4 rounded">
-                <div class="flex flex-col space-y-3 mb-4 text-white text-center">
-                    <div class="flex items-center justify-center text-white">
-                        <img src="images/phone-white.svg" alt="Phone" class="w-4 h-4 mr-2">
-                        <span class="text-sm">+44 (0) 208 342 1100</span>
-                    </div>
-                    <button
-                        class="bg-[#a29061] text-white px-6 py-3 text-xs uppercase tracking-wider hover:bg-[#C19B2A] transition-all"
-                        style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); font-weight: 700;">
-                        Make a Booking
-                    </button>
-                </div>
-                <nav class="flex flex-col space-y-2 text-white text-sm uppercase">
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white p-4 shadow-lg absolute top-full left-0 right-0 z-50">
+                <nav class="flex flex-col space-y-2 text-black text-sm uppercase">
                     <!-- About Mobile -->
                     <div class="mobile-dropdown">
                         <button onclick="toggleMobileDropdown('about')" class="w-full text-left flex justify-between items-center py-2 hover:text-[#A29061]">
@@ -1017,20 +1044,19 @@
 
                     <a href="#contact" class="block py-2 hover:text-[#A29061]">CONTACT</a>
                 </nav>
-            </div>
         </div>
     </header>
 
     <!-- Slider -->
-    <div class="slider-container relative h-screen">
+    <div class="slider-container relative h-screen lg:h-screen">
         <!-- Slide 1 -->
-        <div class="slide active h-[800px] relative">
+        <div class="slide active h-screen lg:h-[800px] relative">
             <picture>
                 <source media="(max-width: 768px)" srcset="images/slide01-mobile.webp">
                 <img src="images/slider011.webp" alt="Dr. Ayham Al-Ayoubi" class="w-full h-full object-cover">
             </picture>
             <div class="absolute inset-0">
-                <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-start pb-8 md:pb-0">
+                <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-start pb-24 md:pb-0">
                     <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left">
                         <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug">
                             "ENHANCING... BUT<br>
@@ -1045,13 +1071,13 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="slide h-[800px] relative">
+        <div class="slide h-screen lg:h-[800px] relative">
             <picture>
                 <source media="(max-width: 768px)" srcset="images/slide02-mobile.webp">
                 <img src="images/slide02.webp" alt="Slide 2" class="w-full h-full object-cover">
             </picture>
             <div class="absolute inset-0">
-                <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-end pb-8 md:pb-0">
+                <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-end pb-24 md:pb-0">
                     <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left">
                         <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug">
                             "EXPERT AESTHETIC<br>
@@ -1064,13 +1090,13 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="slide h-[800px] relative">
+        <div class="slide h-screen lg:h-[800px] relative">
             <picture>
                 <source media="(max-width: 768px)" srcset="images/slide03-mobile.webp">
                 <img src="images/slider03.webp" alt="Slide 3" class="w-full h-full object-cover">
             </picture>
             <div class="absolute inset-0">
-                <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-end pb-8 md:pb-0">
+                <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-end pb-24 md:pb-0">
                     <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left">
                         <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug">
                             "TRANSFORMATIVE<br>
@@ -1091,6 +1117,15 @@
             class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-[#D4AF37] transition-colors z-10">
             ›
         </button>
+
+        <!-- Mobile Booking Button - Full Width at Bottom -->
+        <div class="lg:hidden absolute bottom-0 left-0 right-0 z-20 p-4">
+            <button
+                class="w-full bg-[#a29061] text-white py-4 text-base uppercase font-bold hover:bg-[#C19B2A] transition-all border border-white"
+                style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                Book a Consultation
+            </button>
+        </div>
     </div>
 
     <script>
