@@ -51,11 +51,259 @@
             padding: 0 1rem;
         }
 
+        /* Responsive adjustments for different breakpoints */
+        @media (max-width: 1600px) {
+            .header-container {
+                max-width: 1400px;
+            }
+        }
+
+        @media (max-width: 1599px) and (min-width: 1441px) {
+            header nav a {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .header-container {
+                max-width: 1300px;
+            }
+            header nav a {
+                font-size: 12.5px;
+            }
+            header nav {
+                gap: 1rem;
+            }
+            .mega-dropdown {
+                min-width: 1000px;
+                left: -50px;
+            }
+        }
+
+        @media (max-width: 1366px) {
+            .header-container {
+                max-width: 1200px;
+            }
+            header nav a {
+                font-size: 12px;
+            }
+            header nav {
+                gap: 0.875rem;
+            }
+            .mega-dropdown {
+                min-width: 900px;
+                left: -30px;
+                padding: 30px 35px;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .header-container {
+                max-width: 1100px;
+            }
+            header nav a {
+                font-size: 11.5px;
+            }
+            header nav {
+                gap: 0.75rem;
+            }
+            .mega-dropdown {
+                min-width: 850px;
+                left: -20px;
+                padding: 25px 30px;
+            }
+            .mega-column-title {
+                font-size: 15px;
+            }
+            .mega-item a {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 1199px) and (min-width: 1025px) {
+            header nav a {
+                font-size: 11px;
+            }
+            header nav {
+                gap: 0.625rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .header-container {
+                max-width: 950px;
+            }
+            header nav a {
+                font-size: 10.5px;
+            }
+            header nav {
+                gap: 0.5rem;
+            }
+            .dropdown-content {
+                min-width: 180px;
+                font-size: 12px;
+            }
+            .dropdown-content a {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+        }
+
+        /* Navigation wrapper spacing fix */
+        .nav-wrapper {
+            margin-top: -1rem;
+        }
+
+        @media (max-width: 1599px) and (min-width: 1441px) {
+            .nav-wrapper {
+                margin-top: -0.75rem;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .nav-wrapper {
+                margin-top: 0rem;
+            }
+        }
+
+        @media (max-width: 1366px) {
+            .nav-wrapper {
+                margin-top: 0.25rem;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .nav-wrapper {
+                margin-top: 0.5rem;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .nav-wrapper {
+                margin-top: 0.75rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .nav-wrapper {
+                margin-top: 1rem;
+            }
+        }
+
+        /* Logo responsive sizing */
+        @media (max-width: 1440px) {
+            header img {
+                height: 6rem;
+            }
+        }
+
+        @media (max-width: 1366px) {
+            header img {
+                height: 5.75rem;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            header img {
+                height: 5.5rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            header img {
+                height: 5rem;
+            }
+        }
+
         /* Content container width */
         .content-container {
             max-width: 1440px;
             margin: 0 auto;
             padding: 0 1rem;
+        }
+
+        /* Slider text responsive adjustments */
+        @media (max-width: 1440px) {
+            .hero-text {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 1366px) {
+            .hero-text {
+                font-size: 3.25rem;
+            }
+            .hero-subtitle {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .hero-text {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero-text {
+                font-size: 2.5rem;
+            }
+            .hero-subtitle {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 2rem;
+            }
+            .slide {
+                height: 600px !important;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-text {
+                font-size: 1.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text {
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+        }
+
+        @media (max-width: 414px) {
+            .hero-text {
+                font-size: 1.35rem;
+            }
+            #mobileMenu {
+                max-height: 70vh;
+                overflow-y: auto;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .hero-text {
+                font-size: 1.25rem;
+            }
+            header img {
+                height: 3.5rem !important;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .hero-text {
+                font-size: 1.1rem;
+            }
+            header img {
+                height: 3rem !important;
+            }
+            #mobileMenu {
+                font-size: 0.75rem;
+            }
         }
 
         .slider-container {
@@ -115,6 +363,7 @@
             min-width: 220px;
             padding: 15px 0;
             border-radius: 3px;
+            border-top: 2px solid #A29061;
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
@@ -137,8 +386,8 @@
             font-size: 14px;
             font-weight: 500;
             text-transform: none;
-            transition: color 0.3s;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s;
+            border-bottom: 1px solid rgb(255, 255, 255);
         }
 
         .dropdown-content a:last-child {
@@ -146,16 +395,18 @@
         }
 
         .dropdown-content a:hover {
-            color: #AF9A5B;
+            background-color: #A29061;
+            color: #ffffff;
         }
 
         .mega-dropdown {
             position: absolute;
             top: 100%;
-            left: 0;
+            left: -95px;
             background: #2D2D2D;
             padding: 40px 45px;
             border-radius: 3px;
+            border-top: 2px solid #A29061;
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
@@ -163,7 +414,29 @@
             z-index: 9999;
             margin-top: 16px;
             box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.1);
-            min-width: 900px;
+            min-width: 1165px;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .mega-dropdown::-webkit-scrollbar {
+            width: 13px;
+        }
+
+        .mega-dropdown::-webkit-scrollbar-track {
+            background: #ffffff;
+           
+        }
+
+        .mega-dropdown::-webkit-scrollbar-thumb {
+            background: #c2c2c2;
+            border-radius: 8px;
+            border: 3.5px solid #ffffff;
+        }
+
+        .mega-dropdown::-webkit-scrollbar-thumb:hover {
+            background: #7D7D7D;
+            border: 3.5px solid #ffffff;
         }
 
         .has-dropdown:hover .mega-dropdown {
@@ -174,12 +447,12 @@
 
         .mega-column-title {
             color: #AF9A5B;
-            font-size: 14px;
+            font-size: 17px;
             font-weight: 600;
             text-transform: uppercase;
             margin-bottom: 18px;
             padding-bottom: 12px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgb(255, 255, 255);
         }
 
         .mega-item {
@@ -190,7 +463,7 @@
             color: #ffffff;
             font-size: 14px;
             font-weight: 500;
-            text-transform: none;
+            text-transform: uppercase;
             transition: color 0.3s;
             display: inline-block;
             position: relative;
@@ -198,12 +471,14 @@
         }
 
         .mega-item a:before {
-            content: '•';
+            content: '○';
             position: absolute;
             left: 0;
+            top: 50%;
+            transform: translateY(-50%);
             color: #AF9A5B;
-            font-size: 18px;
-            line-height: 14px;
+            font-size: 6px;
+            line-height: 1;
         }
 
         .mega-item a:hover {
@@ -248,88 +523,154 @@
             </div>
 
             <!-- Second Row: Navigation Menu -->
-            <div class="hidden lg:flex justify-end -mt-4">
+            <div class="hidden lg:flex justify-end nav-wrapper">
                 <nav class="flex items-center space-x-6 text-white text-base uppercase">
                     <!-- About -->
                     <div class="has-dropdown">
-                        <a href="#about" class="nav-link hover:text-[#a29061]">About</a>
+                        <a href="#about" class="nav-link hover:text-[#a29061]">ABOUT</a>
                         <div class="dropdown-content">
-                            <a href="#">Meet Mr Ayoubi</a>
-                            <a href="#">Consultants</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Media</a>
-                            <a href="#">Memberships</a>
-                            <a href="#">News & Events</a>
-                            <a href="#">Testimonials</a>
+                            <a href="#">MEET MR AYOUBI</a>
+                            <a href="#">CONSULTANTS</a>
+                            <a href="#">BLOG</a>
+                            <a href="#">MEDIA</a>
+                            <a href="#">MEMBERSHIPS</a>
+                            <a href="#">NEWS & EVENTS</a>
+                            <a href="#">TESTIMONIALS</a>
                         </div>
                     </div>
 
                     <!-- Treatments Mega Menu -->
                     <div class="has-dropdown">
-                        <a href="#treatments" class="nav-link hover:text-[#a29061]">Treatments</a>
+                        <a href="#treatments" class="nav-link hover:text-[#a29061]">TREATMENTS</a>
                         <div class="mega-dropdown">
                             <div class="grid grid-cols-4 gap-8">
+                                <!-- Face Column -->
                                 <div>
-                                    <div class="mega-column-title">Face</div>
-                                    <div class="mega-item"><a href="#">Anti Wrinkle Injections</a></div>
-                                    <div class="mega-item"><a href="#">Aquamid</a></div>
-                                    <div class="mega-item"><a href="#">Biorevitalization</a></div>
-                                    <div class="mega-item"><a href="#">CO2 Laser</a></div>
-                                    <div class="mega-item"><a href="#">Cosmelan</a></div>
-                                    <div class="mega-item"><a href="#">Deep Acne Scars</a></div>
-                                    <div class="mega-item"><a href="#">Dermal Fillers</a></div>
-                                    <div class="mega-item"><a href="#">Ellanse</a></div>
-                                    <div class="mega-item"><a href="#">Emsculpt</a></div>
-                                    <div class="mega-item"><a href="#">Eyelid Surgery</a></div>
-                                    <div class="mega-item"><a href="#">Facelift</a></div>
-                                    <div class="mega-item"><a href="#">Lip Enhancement</a></div>
-                                    <div class="mega-item"><a href="#">Mesotherapy</a></div>
-                                    <div class="mega-item"><a href="#">Microneedling</a></div>
-                                    <div class="mega-item"><a href="#">Morpheus8</a></div>
-                                    <div class="mega-item"><a href="#">Profhilo Face</a></div>
-                                    <div class="mega-item"><a href="#">Sculptra</a></div>
+                                    <div class="mega-column-title">FACE</div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/anti-wrinkle-injections">Anti Wrinkle Injections</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/aquamid">Aquamid</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/biorevitalization">Biorevitalization</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/co2-laser">CO2 Laser</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/cosmelan">Cosmelan</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/scar-treatment">Deep Acne Scars</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/dermal-fillers">Dermal Fillers</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/ellanse">Ellanse</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/emsculpt">Emsculpt</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/blepharoplasty-eyelid-surgery">Eyelid Surgery</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/eyelight">Eyelight</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/exilis-ultra-360">Exilis Ultra 360</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/facelift-surgery">Facelift</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/fillers-under-eyes">Fillers Under Eyes</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/julaine">Julaine</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/lanluma-face">Lanluma</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/co2-laser">Laser Acne Scars</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/led-laser-mask">LED Laser Mask</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/lip-enhancement">Lip Enhancement</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/mesotherapy-face">Mesotherapy</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/skinpen-microneedling">Microneedling</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/morpheus8">Morpheus8</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/neauvia">Neauvia</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/non-surgical-rhinoplasty">Non-Surgical Nose Job</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/plasma-face-lift">Plasma Face Lift - PRP</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/polynucleotide">Polynucleotide</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/profhilo">Profhilo Face</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/relfydess">Relfydess</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/sculptra">Sculptra</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/silhouette-soft-face-lift">Silhouette Soft</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/thread-lift">Threadlift</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/velashape">VelaShape</a></div>
                                 </div>
+
+                                <!-- Body Column -->
                                 <div>
-                                    <div class="mega-column-title">Body</div>
-                                    <div class="mega-item"><a href="#">Body Contouring</a></div>
-                                    <div class="mega-item"><a href="#">Brazilian Butt Lift</a></div>
-                                    <div class="mega-item"><a href="#">Cellulaze</a></div>
-                                    <div class="mega-item"><a href="#">CoolSculpting</a></div>
-                                    <div class="mega-item"><a href="#">Emsculpt</a></div>
-                                    <div class="mega-item"><a href="#">Lanluma Buttocks</a></div>
-                                    <div class="mega-item"><a href="#">Liposuction</a></div>
-                                    <div class="mega-item"><a href="#">Mesotherapy</a></div>
-                                    <div class="mega-item"><a href="#">Profhilo Body</a></div>
-                                    <div class="mega-item"><a href="#">Sculptra Body</a></div>
-                                    <div class="mega-item"><a href="#">SmartLipo</a></div>
-                                    <div class="mega-item"><a href="#">Tummy Tuck</a></div>
+                                    <div class="mega-column-title">BODY</div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/bodytite">BodyTite</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/brazilian-butt-lift">Brazilian Butt Lift</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/breast-augmentation">Breast Augmentation</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/cellulaze">Cellulaze</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/emsculpt">Emsculpt</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/emsculpt-neo">Emsculpt Neo</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/exilis-ultra-360">Exilis Ultra 360</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/freezing-fat">Fat Freezing</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/genefill">Genefill</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/aging-hands">Hand Rejuvenation</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/hifu">HIFU</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/hyacorp">HYAcorp Buttock</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/intimate-lightening">Intimate Lightening</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/lanluma">Lanluma</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/lanluma-bum-lift">Lanluma Bum Lift</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/laser-breast-lifting">Laser Breast Lift</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/laser-liposuction">Laser Liposuction</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/liposuction">Liposuction</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/liquid-bbl">Liquid BBL</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/morpheus8">Morpheus8</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/laser-assisted-liposuction-lal-smartlipo-suction">Non-Surgical Liposuction</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/polynucleotide-body">Polynucleotide Body</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/profhilo">Profhilo Body</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/sculptra-butt-lift">Sculptra Buttock Lift</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/sculptra-decollete">Sculptra Decollete</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/aging-hands">Sculptra Hands</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/sculptra-hip-dips">Sculptra Hip Dips</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/smartlipo">Smartlipo</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/buttock-lift">Buttock Lift</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/calf-implants">Calf Implant</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/trilipo">TriLipo Laser</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/tummy-tuck">Tummy Tuck</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/vaser-lipo">Vaser Lipo</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/velashape">VelaShape</a></div>
                                 </div>
+
+                                <!-- Conditions Column -->
                                 <div>
-                                    <div class="mega-column-title">Conditions</div>
-                                    <div class="mega-item"><a href="#">Acne Scars</a></div>
-                                    <div class="mega-item"><a href="#">Aging Skin</a></div>
-                                    <div class="mega-item"><a href="#">Cellulite</a></div>
-                                    <div class="mega-item"><a href="#">Dark Circles</a></div>
-                                    <div class="mega-item"><a href="#">Double Chin</a></div>
-                                    <div class="mega-item"><a href="#">Excess Fat</a></div>
-                                    <div class="mega-item"><a href="#">Fine Lines</a></div>
-                                    <div class="mega-item"><a href="#">Loose Skin</a></div>
-                                    <div class="mega-item"><a href="#">Pigmentation</a></div>
-                                    <div class="mega-item"><a href="#">Scars</a></div>
-                                    <div class="mega-item"><a href="#">Wrinkles</a></div>
+                                    <div class="mega-column-title">CONDITIONS</div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/scar-treatment">Acne Scars</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/ageing-decollete">Ageing Decollete</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/aging-hands">Aging Hand</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/cellulite">Cellulite</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/dark-circles">Dark Circles Under Eyes</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/smartlipo">Double Chin</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/anti-wrinkle-injections-excessive-sweating">Excessive Sweating</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/anti-wrinkle-injections">Facial Wrinkles</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/hair-transplant">Hair Loss</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/sculptra-butt-lift">Hollow Buttock</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/under-eye-treatments">Hollow Under Eyes</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/intimate-lightening">Intimate Lightening</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/scars">Keloid Scars</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/sculptra">Loss Of Facial Volume</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/hydrafacial">Melasma</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/co2-laser">Pigmentation</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/laser-thread-vein-removal">Rosacea</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/silhouette-soft-face-lift">Sagging Neck</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/scar-treatment">Scars</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/laser-thread-vein-removal">Spider Veins</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/co2-laser">Stretch Marks</a></div>
                                 </div>
+
+                                <!-- Skin Treatments Column -->
                                 <div>
-                                    <div class="mega-column-title">Skin</div>
-                                    <div class="mega-item"><a href="#">Chemical Peels</a></div>
-                                    <div class="mega-item"><a href="#">CO2 Laser</a></div>
-                                    <div class="mega-item"><a href="#">Cosmelan</a></div>
-                                    <div class="mega-item"><a href="#">Dermapen</a></div>
-                                    <div class="mega-item"><a href="#">HydraFacial</a></div>
-                                    <div class="mega-item"><a href="#">IPL</a></div>
-                                    <div class="mega-item"><a href="#">Laser Hair Removal</a></div>
-                                    <div class="mega-item"><a href="#">LED Therapy</a></div>
-                                    <div class="mega-item"><a href="#">Microneedling</a></div>
-                                    <div class="mega-item"><a href="#">Skin Boosters</a></div>
+                                    <div class="mega-column-title">SKIN TREATMENTS</div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/biorevitalization">Biorevitalization</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/chemical-peels">Chemical Peels</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/co2-laser">CO2 Laser Resurfacing</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/cosmelan">Cosmelan</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/dermaquest">Dermaquest</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/hifu">HIFU</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/hydrafacial">Hydrafacial</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/intraceuticals">Intraceuticals</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/anti-wrinkle-injections-excessive-sweating">Laser For Excessive Sweating</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/laser-hair-removal">Laser Hair Removal</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/led-laser-mask">LED Laser Mask</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/mesotherapy-face">Mesotherapy</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/mesotherapy-hair-care">Mesotherapy Hair</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/microdermabrasion">Microdermabrasion</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/skinpen-microneedling">Microneedling</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/obagi-blue-skin-peel">Obagi</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/phenol-skin-peel">Phenol Skin Peel</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/polynucleotide-body">Polynucleotide Body</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/profhilo">Profhilo</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/sculptra">Sculptra For Scars</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/skin-peel">VI Skin Peel</a></div>
+                                    <div class="mega-item"><a href="https://www.lmaclinic.com/zo-skin-health">ZO Skin Health</a></div>
                                 </div>
                             </div>
                         </div>
@@ -337,67 +678,67 @@
 
                     <!-- SmartLipo -->
                     <div class="has-dropdown">
-                        <a href="#smartlipo" class="nav-link hover:text-[#a29061]">SmartLipo</a>
+                        <a href="#smartlipo" class="nav-link hover:text-[#a29061]">SMARTLIPO</a>
                         <div class="dropdown-content">
-                            <a href="#">SmartLipo Overview</a>
-                            <a href="#">Areas Treated</a>
-                            <a href="#">Benefits</a>
+                            <a href="#">SMARTLIPO OVERVIEW</a>
+                            <a href="#">AREAS TREATED</a>
+                            <a href="#">BENEFITS</a>
                         </div>
                     </div>
 
                     <!-- Cellulaze -->
                     <div class="has-dropdown">
-                        <a href="#cellulaze" class="nav-link hover:text-[#a29061]">Cellulaze</a>
+                        <a href="#cellulaze" class="nav-link hover:text-[#a29061]">CELLULAZE</a>
                         <div class="dropdown-content">
-                            <a href="#">Cellulaze Overview</a>
-                            <a href="#">How It Works</a>
-                            <a href="#">Results</a>
+                            <a href="#">CELLULAZE OVERVIEW</a>
+                            <a href="#">HOW IT WORKS</a>
+                            <a href="#">RESULTS</a>
                         </div>
                     </div>
 
                     <!-- Sculptra -->
                     <div class="has-dropdown">
-                        <a href="#sculptra" class="nav-link hover:text-[#a29061]">Sculptra</a>
+                        <a href="#sculptra" class="nav-link hover:text-[#a29061]">SCULPTRA</a>
                         <div class="dropdown-content">
-                            <a href="#">Sculptra Face</a>
-                            <a href="#">Sculptra Body</a>
-                            <a href="#">Sculptra Buttocks</a>
+                            <a href="#">SCULPTRA FACE</a>
+                            <a href="#">SCULPTRA BODY</a>
+                            <a href="#">SCULPTRA BUTTOCKS</a>
                         </div>
                     </div>
 
                     <!-- CO2 Laser -->
                     <div class="has-dropdown">
-                        <a href="#co2-laser" class="nav-link hover:text-[#a29061]">CO2 Laser</a>
+                        <a href="#co2-laser" class="nav-link hover:text-[#a29061]">CO2 LASER</a>
                         <div class="dropdown-content">
-                            <a href="#">CO2 Laser Face</a>
-                            <a href="#">Acne Scars</a>
-                            <a href="#">Skin Resurfacing</a>
+                            <a href="#">CO2 LASER FACE</a>
+                            <a href="#">ACNE SCARS</a>
+                            <a href="#">SKIN RESURFACING</a>
                         </div>
                     </div>
 
                     <!-- Lanluma -->
                     <div class="has-dropdown">
-                        <a href="#lanluma" class="nav-link hover:text-[#a29061]">Lanluma</a>
+                        <a href="#lanluma" class="nav-link hover:text-[#a29061]">LANLUMA</a>
                         <div class="dropdown-content">
-                            <a href="#">Lanluma Face</a>
-                            <a href="#">Lanluma Buttocks</a>
-                            <a href="#">Lanluma Body</a>
+                            <a href="#">LANLUMA FACE</a>
+                            <a href="#">LANLUMA BUTTOCKS</a>
+                            <a href="#">LANLUMA BODY</a>
                         </div>
                     </div>
 
-                    <a href="#before-after" class="nav-link hover:text-[#a29061]">Before & After</a>
+                    <a href="#before-after" class="nav-link hover:text-[#a29061]">BEFORE & AFTER</a>
 
                     <!-- Videos & Media -->
                     <div class="has-dropdown">
-                        <a href="#videos" class="nav-link hover:text-[#a29061]">Videos & Media</a>
+                        <a href="#videos" class="nav-link hover:text-[#a29061]">VIDEOS & MEDIA</a>
                         <div class="dropdown-content">
-                            <a href="#">Patient Videos</a>
-                            <a href="#">Procedure Videos</a>
-                            <a href="#">Media Coverage</a>
+                            <a href="#">PATIENT VIDEOS</a>
+                            <a href="#">PROCEDURE VIDEOS</a>
+                            <a href="#">MEDIA COVERAGE</a>
                         </div>
                     </div>
 
-                    <a href="#contact" class="nav-link hover:text-[#a29061]">Contact</a>
+                    <a href="#contact" class="nav-link hover:text-[#a29061]">CONTACT</a>
                 </nav>
             </div>
 
@@ -414,17 +755,267 @@
                         Make a Booking
                     </button>
                 </div>
-                <nav class="flex flex-col space-y-3 text-white text-sm uppercase">
-                    <a href="#about" class="hover:text-[#D4AF37]">About</a>
-                    <a href="#treatments" class="hover:text-[#D4AF37]">Treatments</a>
-                    <a href="#smartlipo" class="hover:text-[#D4AF37]">SmartLipo</a>
-                    <a href="#cellulaze" class="hover:text-[#D4AF37]">Cellulaze</a>
-                    <a href="#sculptra" class="hover:text-[#D4AF37]">Sculptra</a>
-                    <a href="#co2-laser" class="hover:text-[#D4AF37]">CO2 Laser</a>
-                    <a href="#lanluma" class="hover:text-[#D4AF37]">Lanluma</a>
-                    <a href="#before-after" class="hover:text-[#D4AF37]">Before & After</a>
-                    <a href="#videos" class="hover:text-[#D4AF37]">Videos & Media</a>
-                    <a href="#contact" class="hover:text-[#D4AF37]">Contact</a>
+                <nav class="flex flex-col space-y-2 text-white text-sm uppercase">
+                    <!-- About Mobile -->
+                    <div class="mobile-dropdown">
+                        <button onclick="toggleMobileDropdown('about')" class="w-full text-left flex justify-between items-center py-2 hover:text-[#A29061]">
+                            <span>ABOUT</span>
+                            <svg class="w-4 h-4 transform transition-transform" id="about-arrow" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div id="about-dropdown" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">MEET MR AYOUBI</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">CONSULTANTS</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">BLOG</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">MEDIA</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">MEMBERSHIPS</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">NEWS & EVENTS</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">TESTIMONIALS</a>
+                        </div>
+                    </div>
+
+                    <!-- Treatments Mobile -->
+                    <div class="mobile-dropdown">
+                        <button onclick="toggleMobileDropdown('treatments')" class="w-full text-left flex justify-between items-center py-2 hover:text-[#A29061]">
+                            <span>TREATMENTS</span>
+                            <svg class="w-4 h-4 transform transition-transform" id="treatments-arrow" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div id="treatments-dropdown" class="hidden pl-4 space-y-3 mt-2 max-h-96 overflow-y-auto">
+                            <!-- Face -->
+                            <div>
+                                <div class="text-[#A29061] font-semibold text-xs mb-2">FACE</div>
+                                <div class="space-y-1 text-xs">
+                                    <a href="https://www.lmaclinic.com/anti-wrinkle-injections" class="block py-1 hover:text-[#A29061]">ANTI WRINKLE INJECTIONS</a>
+                                    <a href="https://www.lmaclinic.com/aquamid" class="block py-1 hover:text-[#A29061]">AQUAMID</a>
+                                    <a href="https://www.lmaclinic.com/biorevitalization" class="block py-1 hover:text-[#A29061]">BIOREVITALIZATION</a>
+                                    <a href="https://www.lmaclinic.com/co2-laser" class="block py-1 hover:text-[#A29061]">CO2 LASER</a>
+                                    <a href="https://www.lmaclinic.com/cosmelan" class="block py-1 hover:text-[#A29061]">COSMELAN</a>
+                                    <a href="https://www.lmaclinic.com/scar-treatment" class="block py-1 hover:text-[#A29061]">DEEP ACNE SCARS</a>
+                                    <a href="https://www.lmaclinic.com/dermal-fillers" class="block py-1 hover:text-[#A29061]">DERMAL FILLERS</a>
+                                    <a href="https://www.lmaclinic.com/ellanse" class="block py-1 hover:text-[#A29061]">ELLANSE</a>
+                                    <a href="https://www.lmaclinic.com/emsculpt" class="block py-1 hover:text-[#A29061]">EMSCULPT</a>
+                                    <a href="https://www.lmaclinic.com/blepharoplasty-eyelid-surgery" class="block py-1 hover:text-[#A29061]">EYELID SURGERY</a>
+                                    <a href="https://www.lmaclinic.com/eyelight" class="block py-1 hover:text-[#A29061]">EYELIGHT</a>
+                                    <a href="https://www.lmaclinic.com/exilis-ultra-360" class="block py-1 hover:text-[#A29061]">EXILIS ULTRA 360</a>
+                                    <a href="https://www.lmaclinic.com/facelift-surgery" class="block py-1 hover:text-[#A29061]">FACELIFT</a>
+                                    <a href="https://www.lmaclinic.com/fillers-under-eyes" class="block py-1 hover:text-[#A29061]">FILLERS UNDER EYES</a>
+                                    <a href="https://www.lmaclinic.com/julaine" class="block py-1 hover:text-[#A29061]">JULAINE</a>
+                                    <a href="https://www.lmaclinic.com/lanluma-face" class="block py-1 hover:text-[#A29061]">LANLUMA</a>
+                                    <a href="https://www.lmaclinic.com/co2-laser" class="block py-1 hover:text-[#A29061]">LASER ACNE SCARS</a>
+                                    <a href="https://www.lmaclinic.com/led-laser-mask" class="block py-1 hover:text-[#A29061]">LED LASER MASK</a>
+                                    <a href="https://www.lmaclinic.com/lip-enhancement" class="block py-1 hover:text-[#A29061]">LIP ENHANCEMENT</a>
+                                    <a href="https://www.lmaclinic.com/mesotherapy-face" class="block py-1 hover:text-[#A29061]">MESOTHERAPY</a>
+                                    <a href="https://www.lmaclinic.com/skinpen-microneedling" class="block py-1 hover:text-[#A29061]">MICRONEEDLING</a>
+                                    <a href="https://www.lmaclinic.com/morpheus8" class="block py-1 hover:text-[#A29061]">MORPHEUS8</a>
+                                    <a href="https://www.lmaclinic.com/neauvia" class="block py-1 hover:text-[#A29061]">NEAUVIA</a>
+                                    <a href="https://www.lmaclinic.com/non-surgical-rhinoplasty" class="block py-1 hover:text-[#A29061]">NON-SURGICAL NOSE JOB</a>
+                                    <a href="https://www.lmaclinic.com/plasma-face-lift" class="block py-1 hover:text-[#A29061]">PLASMA FACE LIFT - PRP</a>
+                                    <a href="https://www.lmaclinic.com/polynucleotide" class="block py-1 hover:text-[#A29061]">POLYNUCLEOTIDE</a>
+                                    <a href="https://www.lmaclinic.com/profhilo" class="block py-1 hover:text-[#A29061]">PROFHILO FACE</a>
+                                    <a href="https://www.lmaclinic.com/relfydess" class="block py-1 hover:text-[#A29061]">RELFYDESS</a>
+                                    <a href="https://www.lmaclinic.com/sculptra" class="block py-1 hover:text-[#A29061]">SCULPTRA</a>
+                                    <a href="https://www.lmaclinic.com/silhouette-soft-face-lift" class="block py-1 hover:text-[#A29061]">SILHOUETTE SOFT</a>
+                                    <a href="https://www.lmaclinic.com/thread-lift" class="block py-1 hover:text-[#A29061]">THREADLIFT</a>
+                                    <a href="https://www.lmaclinic.com/velashape" class="block py-1 hover:text-[#A29061]">VELASHAPE</a>
+                                </div>
+                            </div>
+
+                            <!-- Body -->
+                            <div>
+                                <div class="text-[#A29061] font-semibold text-xs mb-2">BODY</div>
+                                <div class="space-y-1 text-xs">
+                                    <a href="https://www.lmaclinic.com/bodytite" class="block py-1 hover:text-[#A29061]">BODYTITE</a>
+                                    <a href="https://www.lmaclinic.com/brazilian-butt-lift" class="block py-1 hover:text-[#A29061]">BRAZILIAN BUTT LIFT</a>
+                                    <a href="https://www.lmaclinic.com/breast-augmentation" class="block py-1 hover:text-[#A29061]">BREAST AUGMENTATION</a>
+                                    <a href="https://www.lmaclinic.com/cellulaze" class="block py-1 hover:text-[#A29061]">CELLULAZE</a>
+                                    <a href="https://www.lmaclinic.com/emsculpt" class="block py-1 hover:text-[#A29061]">EMSCULPT</a>
+                                    <a href="https://www.lmaclinic.com/emsculpt-neo" class="block py-1 hover:text-[#A29061]">EMSCULPT NEO</a>
+                                    <a href="https://www.lmaclinic.com/exilis-ultra-360" class="block py-1 hover:text-[#A29061]">EXILIS ULTRA 360</a>
+                                    <a href="https://www.lmaclinic.com/freezing-fat" class="block py-1 hover:text-[#A29061]">FAT FREEZING</a>
+                                    <a href="https://www.lmaclinic.com/genefill" class="block py-1 hover:text-[#A29061]">GENEFILL</a>
+                                    <a href="https://www.lmaclinic.com/aging-hands" class="block py-1 hover:text-[#A29061]">HAND REJUVENATION</a>
+                                    <a href="https://www.lmaclinic.com/hifu" class="block py-1 hover:text-[#A29061]">HIFU</a>
+                                    <a href="https://www.lmaclinic.com/hyacorp" class="block py-1 hover:text-[#A29061]">HYACORP BUTTOCK</a>
+                                    <a href="https://www.lmaclinic.com/intimate-lightening" class="block py-1 hover:text-[#A29061]">INTIMATE LIGHTENING</a>
+                                    <a href="https://www.lmaclinic.com/lanluma" class="block py-1 hover:text-[#A29061]">LANLUMA</a>
+                                    <a href="https://www.lmaclinic.com/lanluma-bum-lift" class="block py-1 hover:text-[#A29061]">LANLUMA BUM LIFT</a>
+                                    <a href="https://www.lmaclinic.com/laser-breast-lifting" class="block py-1 hover:text-[#A29061]">LASER BREAST LIFT</a>
+                                    <a href="https://www.lmaclinic.com/laser-liposuction" class="block py-1 hover:text-[#A29061]">LASER LIPOSUCTION</a>
+                                    <a href="https://www.lmaclinic.com/liposuction" class="block py-1 hover:text-[#A29061]">LIPOSUCTION</a>
+                                    <a href="https://www.lmaclinic.com/liquid-bbl" class="block py-1 hover:text-[#A29061]">LIQUID BBL</a>
+                                    <a href="https://www.lmaclinic.com/morpheus8" class="block py-1 hover:text-[#A29061]">MORPHEUS8</a>
+                                    <a href="https://www.lmaclinic.com/laser-assisted-liposuction-lal-smartlipo-suction" class="block py-1 hover:text-[#A29061]">NON-SURGICAL LIPOSUCTION</a>
+                                    <a href="https://www.lmaclinic.com/polynucleotide-body" class="block py-1 hover:text-[#A29061]">POLYNUCLEOTIDE BODY</a>
+                                    <a href="https://www.lmaclinic.com/profhilo" class="block py-1 hover:text-[#A29061]">PROFHILO BODY</a>
+                                    <a href="https://www.lmaclinic.com/sculptra-butt-lift" class="block py-1 hover:text-[#A29061]">SCULPTRA BUTTOCK LIFT</a>
+                                    <a href="https://www.lmaclinic.com/sculptra-decollete" class="block py-1 hover:text-[#A29061]">SCULPTRA DECOLLETE</a>
+                                    <a href="https://www.lmaclinic.com/aging-hands" class="block py-1 hover:text-[#A29061]">SCULPTRA HANDS</a>
+                                    <a href="https://www.lmaclinic.com/sculptra-hip-dips" class="block py-1 hover:text-[#A29061]">SCULPTRA HIP DIPS</a>
+                                    <a href="https://www.lmaclinic.com/smartlipo" class="block py-1 hover:text-[#A29061]">SMARTLIPO</a>
+                                    <a href="https://www.lmaclinic.com/buttock-lift" class="block py-1 hover:text-[#A29061]">BUTTOCK LIFT</a>
+                                    <a href="https://www.lmaclinic.com/calf-implants" class="block py-1 hover:text-[#A29061]">CALF IMPLANT</a>
+                                    <a href="https://www.lmaclinic.com/trilipo" class="block py-1 hover:text-[#A29061]">TRILIPO LASER</a>
+                                    <a href="https://www.lmaclinic.com/tummy-tuck" class="block py-1 hover:text-[#A29061]">TUMMY TUCK</a>
+                                    <a href="https://www.lmaclinic.com/vaser-lipo" class="block py-1 hover:text-[#A29061]">VASER LIPO</a>
+                                    <a href="https://www.lmaclinic.com/velashape" class="block py-1 hover:text-[#A29061]">VELASHAPE</a>
+                                </div>
+                            </div>
+
+                            <!-- Conditions -->
+                            <div>
+                                <div class="text-[#A29061] font-semibold text-xs mb-2">CONDITIONS</div>
+                                <div class="space-y-1 text-xs">
+                                    <a href="https://www.lmaclinic.com/scar-treatment" class="block py-1 hover:text-[#A29061]">ACNE SCARS</a>
+                                    <a href="https://www.lmaclinic.com/ageing-decollete" class="block py-1 hover:text-[#A29061]">AGEING DECOLLETE</a>
+                                    <a href="https://www.lmaclinic.com/aging-hands" class="block py-1 hover:text-[#A29061]">AGING HAND</a>
+                                    <a href="https://www.lmaclinic.com/cellulite" class="block py-1 hover:text-[#A29061]">CELLULITE</a>
+                                    <a href="https://www.lmaclinic.com/dark-circles" class="block py-1 hover:text-[#A29061]">DARK CIRCLES UNDER EYES</a>
+                                    <a href="https://www.lmaclinic.com/smartlipo" class="block py-1 hover:text-[#A29061]">DOUBLE CHIN</a>
+                                    <a href="https://www.lmaclinic.com/anti-wrinkle-injections-excessive-sweating" class="block py-1 hover:text-[#A29061]">EXCESSIVE SWEATING</a>
+                                    <a href="https://www.lmaclinic.com/anti-wrinkle-injections" class="block py-1 hover:text-[#A29061]">FACIAL WRINKLES</a>
+                                    <a href="https://www.lmaclinic.com/hair-transplant" class="block py-1 hover:text-[#A29061]">HAIR LOSS</a>
+                                    <a href="https://www.lmaclinic.com/sculptra-butt-lift" class="block py-1 hover:text-[#A29061]">HOLLOW BUTTOCK</a>
+                                    <a href="https://www.lmaclinic.com/under-eye-treatments" class="block py-1 hover:text-[#A29061]">HOLLOW UNDER EYES</a>
+                                    <a href="https://www.lmaclinic.com/intimate-lightening" class="block py-1 hover:text-[#A29061]">INTIMATE LIGHTENING</a>
+                                    <a href="https://www.lmaclinic.com/scars" class="block py-1 hover:text-[#A29061]">KELOID SCARS</a>
+                                    <a href="https://www.lmaclinic.com/sculptra" class="block py-1 hover:text-[#A29061]">LOSS OF FACIAL VOLUME</a>
+                                    <a href="https://www.lmaclinic.com/hydrafacial" class="block py-1 hover:text-[#A29061]">MELASMA</a>
+                                    <a href="https://www.lmaclinic.com/co2-laser" class="block py-1 hover:text-[#A29061]">PIGMENTATION</a>
+                                    <a href="https://www.lmaclinic.com/laser-thread-vein-removal" class="block py-1 hover:text-[#A29061]">ROSACEA</a>
+                                    <a href="https://www.lmaclinic.com/silhouette-soft-face-lift" class="block py-1 hover:text-[#A29061]">SAGGING NECK</a>
+                                    <a href="https://www.lmaclinic.com/scar-treatment" class="block py-1 hover:text-[#A29061]">SCARS</a>
+                                    <a href="https://www.lmaclinic.com/laser-thread-vein-removal" class="block py-1 hover:text-[#A29061]">SPIDER VEINS</a>
+                                    <a href="https://www.lmaclinic.com/co2-laser" class="block py-1 hover:text-[#A29061]">STRETCH MARKS</a>
+                                </div>
+                            </div>
+
+                            <!-- Skin Treatments -->
+                            <div>
+                                <div class="text-[#A29061] font-semibold text-xs mb-2">SKIN TREATMENTS</div>
+                                <div class="space-y-1 text-xs">
+                                    <a href="https://www.lmaclinic.com/biorevitalization" class="block py-1 hover:text-[#A29061]">BIOREVITALIZATION</a>
+                                    <a href="https://www.lmaclinic.com/chemical-peels" class="block py-1 hover:text-[#A29061]">CHEMICAL PEELS</a>
+                                    <a href="https://www.lmaclinic.com/co2-laser" class="block py-1 hover:text-[#A29061]">CO2 LASER RESURFACING</a>
+                                    <a href="https://www.lmaclinic.com/cosmelan" class="block py-1 hover:text-[#A29061]">COSMELAN</a>
+                                    <a href="https://www.lmaclinic.com/dermaquest" class="block py-1 hover:text-[#A29061]">DERMAQUEST</a>
+                                    <a href="https://www.lmaclinic.com/hifu" class="block py-1 hover:text-[#A29061]">HIFU</a>
+                                    <a href="https://www.lmaclinic.com/hydrafacial" class="block py-1 hover:text-[#A29061]">HYDRAFACIAL</a>
+                                    <a href="https://www.lmaclinic.com/intraceuticals" class="block py-1 hover:text-[#A29061]">INTRACEUTICALS</a>
+                                    <a href="https://www.lmaclinic.com/anti-wrinkle-injections-excessive-sweating" class="block py-1 hover:text-[#A29061]">LASER FOR EXCESSIVE SWEATING</a>
+                                    <a href="https://www.lmaclinic.com/laser-hair-removal" class="block py-1 hover:text-[#A29061]">LASER HAIR REMOVAL</a>
+                                    <a href="https://www.lmaclinic.com/led-laser-mask" class="block py-1 hover:text-[#A29061]">LED LASER MASK</a>
+                                    <a href="https://www.lmaclinic.com/mesotherapy-face" class="block py-1 hover:text-[#A29061]">MESOTHERAPY</a>
+                                    <a href="https://www.lmaclinic.com/mesotherapy-hair-care" class="block py-1 hover:text-[#A29061]">MESOTHERAPY HAIR</a>
+                                    <a href="https://www.lmaclinic.com/microdermabrasion" class="block py-1 hover:text-[#A29061]">MICRODERMABRASION</a>
+                                    <a href="https://www.lmaclinic.com/skinpen-microneedling" class="block py-1 hover:text-[#A29061]">MICRONEEDLING</a>
+                                    <a href="https://www.lmaclinic.com/obagi-blue-skin-peel" class="block py-1 hover:text-[#A29061]">OBAGI</a>
+                                    <a href="https://www.lmaclinic.com/phenol-skin-peel" class="block py-1 hover:text-[#A29061]">PHENOL SKIN PEEL</a>
+                                    <a href="https://www.lmaclinic.com/polynucleotide-body" class="block py-1 hover:text-[#A29061]">POLYNUCLEOTIDE BODY</a>
+                                    <a href="https://www.lmaclinic.com/profhilo" class="block py-1 hover:text-[#A29061]">PROFHILO</a>
+                                    <a href="https://www.lmaclinic.com/sculptra" class="block py-1 hover:text-[#A29061]">SCULPTRA FOR SCARS</a>
+                                    <a href="https://www.lmaclinic.com/skin-peel" class="block py-1 hover:text-[#A29061]">VI SKIN PEEL</a>
+                                    <a href="https://www.lmaclinic.com/zo-skin-health" class="block py-1 hover:text-[#A29061]">ZO SKIN HEALTH</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SmartLipo Mobile -->
+                    <div class="mobile-dropdown">
+                        <button onclick="toggleMobileDropdown('smartlipo')" class="w-full text-left flex justify-between items-center py-2 hover:text-[#A29061]">
+                            <span>SMARTLIPO</span>
+                            <svg class="w-4 h-4 transform transition-transform" id="smartlipo-arrow" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div id="smartlipo-dropdown" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">SMARTLIPO OVERVIEW</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">AREAS TREATED</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">BENEFITS</a>
+                        </div>
+                    </div>
+
+                    <!-- Cellulaze Mobile -->
+                    <div class="mobile-dropdown">
+                        <button onclick="toggleMobileDropdown('cellulaze')" class="w-full text-left flex justify-between items-center py-2 hover:text-[#A29061]">
+                            <span>CELLULAZE</span>
+                            <svg class="w-4 h-4 transform transition-transform" id="cellulaze-arrow" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div id="cellulaze-dropdown" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">CELLULAZE OVERVIEW</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">HOW IT WORKS</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">RESULTS</a>
+                        </div>
+                    </div>
+
+                    <!-- Sculptra Mobile -->
+                    <div class="mobile-dropdown">
+                        <button onclick="toggleMobileDropdown('sculptra')" class="w-full text-left flex justify-between items-center py-2 hover:text-[#A29061]">
+                            <span>SCULPTRA</span>
+                            <svg class="w-4 h-4 transform transition-transform" id="sculptra-arrow" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div id="sculptra-dropdown" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA FACE</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA BODY</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA BUTTOCKS</a>
+                        </div>
+                    </div>
+
+                    <!-- CO2 Laser Mobile -->
+                    <div class="mobile-dropdown">
+                        <button onclick="toggleMobileDropdown('co2laser')" class="w-full text-left flex justify-between items-center py-2 hover:text-[#A29061]">
+                            <span>CO2 LASER</span>
+                            <svg class="w-4 h-4 transform transition-transform" id="co2laser-arrow" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div id="co2laser-dropdown" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">CO2 LASER FACE</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">ACNE SCARS</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">SKIN RESURFACING</a>
+                        </div>
+                    </div>
+
+                    <!-- Lanluma Mobile -->
+                    <div class="mobile-dropdown">
+                        <button onclick="toggleMobileDropdown('lanluma')" class="w-full text-left flex justify-between items-center py-2 hover:text-[#A29061]">
+                            <span>LANLUMA</span>
+                            <svg class="w-4 h-4 transform transition-transform" id="lanluma-arrow" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div id="lanluma-dropdown" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA FACE</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA BUTTOCKS</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA BODY</a>
+                        </div>
+                    </div>
+
+                    <a href="#before-after" class="block py-2 hover:text-[#A29061]">BEFORE & AFTER</a>
+
+                    <!-- Videos & Media Mobile -->
+                    <div class="mobile-dropdown">
+                        <button onclick="toggleMobileDropdown('videos')" class="w-full text-left flex justify-between items-center py-2 hover:text-[#A29061]">
+                            <span>VIDEOS & MEDIA</span>
+                            <svg class="w-4 h-4 transform transition-transform" id="videos-arrow" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div id="videos-dropdown" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">PATIENT VIDEOS</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">PROCEDURE VIDEOS</a>
+                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">MEDIA COVERAGE</a>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="block py-2 hover:text-[#A29061]">CONTACT</a>
                 </nav>
             </div>
         </div>
@@ -439,15 +1030,15 @@
                 <img src="images/slider011.webp" alt="Dr. Ayham Al-Ayoubi" class="w-full h-full object-cover">
             </picture>
             <div class="absolute inset-0">
-                <div class="content-container h-full flex items-center">
-                    <div class="max-w-2xl text-white mt-[4rem]">
+                <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-start pb-8 md:pb-0">
+                    <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left">
                         <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug">
                             "ENHANCING... BUT<br>
                             PRESERVING NATURAL<br>
                             BEAUTY"
                         </h1>
-                        <p class="hero-subtitle mb-2" style="font-weight: 700; font-size: 22px;">Mr Ayham Al-Ayoubi</p>
-                        <p class="hero-subtitle">3rd Generation ENT, Facial Plastic & Laser Surgeon</p>
+                        <p class="hero-subtitle mb-2 hidden md:block" style="font-weight: 700; font-size: 22px;">Mr Ayham Al-Ayoubi</p>
+                        <p class="hero-subtitle hidden md:block">3rd Generation ENT, Facial Plastic & Laser Surgeon</p>
                     </div>
                 </div>
             </div>
@@ -460,13 +1051,13 @@
                 <img src="images/slide02.webp" alt="Slide 2" class="w-full h-full object-cover">
             </picture>
             <div class="absolute inset-0">
-                <div class="content-container h-full flex items-center justify-end">
-                    <div class="max-w-2xl text-white mt-[4rem]">
+                <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-end pb-8 md:pb-0">
+                    <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left">
                         <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug">
                             "EXPERT AESTHETIC<br>
                             TREATMENTS"
                         </h1>
-                        <p class="hero-subtitle">Advanced Solutions for Natural Beauty</p>
+                        <p class="hero-subtitle hidden md:block">Advanced Solutions for Natural Beauty</p>
                     </div>
                 </div>
             </div>
@@ -479,13 +1070,13 @@
                 <img src="images/slider03.webp" alt="Slide 3" class="w-full h-full object-cover">
             </picture>
             <div class="absolute inset-0">
-                <div class="content-container h-full flex items-center justify-end">
-                    <div class="max-w-2xl text-white mt-[4rem]">
+                <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-end pb-8 md:pb-0">
+                    <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left">
                         <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug">
                             "TRANSFORMATIVE<br>
                             RESULTS"
                         </h1>
-                        <p class="hero-subtitle">Cutting-Edge Medical Aesthetics</p>
+                        <p class="hero-subtitle hidden md:block">Cutting-Edge Medical Aesthetics</p>
                     </div>
                 </div>
             </div>
@@ -538,6 +1129,13 @@
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
+        }
+
+        function toggleMobileDropdown(id) {
+            const dropdown = document.getElementById(id + '-dropdown');
+            const arrow = document.getElementById(id + '-arrow');
+            dropdown.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
         }
 
         // Auto slide disabled
