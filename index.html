@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>London Medical & Aesthetic Clinic</title>
+    <link rel="stylesheet" href="https://use.typekit.net/euw1ajk.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400&family=Roboto:wght@100;300&family=Lato:wght@100;300&display=swap');
@@ -28,7 +29,8 @@
         }
 
         .hero-text {
-            font-family: 'OptimaLTPro', 'Optima', 'Segoe UI', 'Candara', sans-serif;
+            font-family: 'optima-nova-lt-pro', 'OptimaLTPro', 'Optima', 'Segoe UI', 'Candara', sans-serif;
+            font-size: clamp(1.5rem, 4vw, 3.75rem);
         }
 
         .hero-subtitle {
@@ -72,10 +74,10 @@
                 font-size: 12.5px;
             }
             header nav {
-                gap: 1rem;
+                gap: 0.1rem;
             }
             .mega-dropdown {
-                min-width: 1000px;
+                min-width: auto;
                 left: -50px;
             }
         }
@@ -88,12 +90,23 @@
                 font-size: 12px;
             }
             header nav {
-                gap: 0.875rem;
+                gap: 0px;
+            }
+            header img {
+                height: 6rem;
             }
             .mega-dropdown {
-                min-width: 900px;
+                min-width: auto;
                 left: -30px;
-                padding: 30px 35px;
+                padding: 25px 30px;
+            }
+            .mega-column-title {
+                font-size: 15px;
+                margin-bottom: 14px;
+                padding-bottom: 10px;
+            }
+            .mega-item a {
+                font-size: 12px;
             }
         }
 
@@ -105,18 +118,20 @@
                 font-size: 11.5px;
             }
             header nav {
-                gap: 0.75rem;
+                gap: 0px;
             }
             .mega-dropdown {
-                min-width: 850px;
-                left: -20px;
-                padding: 25px 30px;
+                min-width: auto;
+                left: -15px;
+                padding: 20px 25px;
             }
             .mega-column-title {
-                font-size: 15px;
+                font-size: 14px;
+                margin-bottom: 12px;
+                padding-bottom: 8px;
             }
             .mega-item a {
-                font-size: 12px;
+                font-size: 11px;
             }
         }
 
@@ -380,7 +395,7 @@
             top: 100%;
             left: 0;
             background: #2D2D2D;
-            min-width: 220px;
+            width: max-content;
             padding: 15px 0;
             border-radius: 3px;
             border-top: 2px solid #A29061;
@@ -408,6 +423,7 @@
             text-transform: none;
             transition: all 0.3s;
             border-bottom: 1px solid rgb(255, 255, 255);
+            white-space: nowrap;
         }
 
         .dropdown-content a:last-child {
@@ -434,9 +450,15 @@
             z-index: 9999;
             margin-top: 16px;
             box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.1);
-            min-width: 1165px;
+            min-width: 60vw;
             max-height: 600px;
             overflow-y: auto;
+        }
+
+        @media (min-width: 1441px) {
+            .mega-dropdown {
+                min-width: 60vw;
+            }
         }
 
         .mega-dropdown::-webkit-scrollbar {
@@ -504,6 +526,56 @@
         .mega-item a:hover {
             color: #AF9A5B;
         }
+
+        .flex.justify-end.nav-wrapper {
+    margin-top: -16px;
+}
+
+        /* Hamburger to Cross Animation */
+        .hamburger-line {
+            transition: all 0.3s ease-in-out;
+            transform-origin: center;
+        }
+
+        .hamburger-open .hamburger-line:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+        }
+
+        .hamburger-open .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-open .hamburger-line:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+        }
+
+        @media (max-width: 768px) {
+            .slide .hero-text,
+            .slide .hero-subtitle,
+            .slide p {
+                color: white !important;
+            }
+            .slide .hero-text {
+                font-size: calc(clamp(1.5rem, 4vw, 3.75rem) + 2px) !important;
+            }
+            .slide:nth-child(1) .hero-text {
+                font-size: calc(clamp(1.5rem, 4vw, 3.75rem) + 16px) !important;
+            }
+            .slide .hero-subtitle {
+                font-size: calc(18px + 2px) !important;
+            }
+        }
+
+        @media (max-width: 1366px) {
+            .md\:h-28 {
+                height: 6rem !important;
+            }
+            header nav {
+                gap: 0px;
+            }
+        }
+
+
     </style>
 </head>
 
@@ -515,10 +587,11 @@
         <div class="lg:hidden bg-white py-3 px-4">
             <div class="flex items-center justify-between">
                 <!-- Hamburger Menu - Left -->
-                <button class="text-[#a29061]" onclick="toggleMobileMenu()">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
+                <button class="text-[#a29061]" id="hamburgerBtn" onclick="toggleMobileMenu()">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path class="hamburger-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16"></path>
+                        <path class="hamburger-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 12h16"></path>
+                        <path class="hamburger-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 18h16"></path>
                     </svg>
                 </button>
 
@@ -530,7 +603,7 @@
 
                 <!-- Phone Icon - Right -->
                 <a href="tel:+442083421100" class="flex items-center">
-                    <img src="images/phone.svg" alt="Phone" class="w-6 h-6">
+                    <img src="images/phone.svg" alt="Phone" class="w-10 h-10">
                 </a>
             </div>
         </div>
@@ -541,38 +614,38 @@
             <div class="flex items-center justify-between mb-2">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <img src="images/mainLogo.png" alt="London Medical & Aesthetic Clinic"
-                        class="h-16 md:h-28 w-auto" style="position: relative; top: 14px;">
+                    <img src="images/updatelogo.webp" alt="London Medical & Aesthetic Clinic"
+                        class="h-16 md:h-28 w-auto" style="position: relative; top: 18px;">
                 </div>
 
                 <!-- Contact and CTA - Desktop -->
                 <div class="flex items-center justify-center space-x-8">
-                    <div class="flex items-center text-white">
-                        <img src="images/phone.svg" alt="Phone" class="w-6 h-6 mr-2">
-                        <span class="text-lg">+44 (0) 208 342 1100</span>
-                    </div>
-                    <button
-                        class="bg-[#a29061] text-black px-8 pt-2 pb-[4px] text-[18px] uppercase hover:bg-[#C19B2A] transition-all"
-                        style="box-shadow: -7px 4px 8px rgba(0, 0, 0, 1.6); font-weight: 900;">
+                    <a href="tel:+442083421100" class="flex items-center text-white hover:text-[#a29061] transition-colors">
+                        <img src="images/phone.svg" alt="Phone" class="w-6 h-6 mr-2" style="filter: drop-shadow(-7px 4px 8px rgba(0, 0, 0, 1.6));">
+                        <span class="text-lg" style="text-shadow: -7px 4px 8px rgba(0, 0, 0, 1.6);">+44 (0) 208 342 1100</span>
+                    </a>
+                    <a href="https://www.lmaclinic.com/contact"
+                        class="inline-block bg-[#a29061] text-black px-8 pt-2 pb-[4px] text-[18px] uppercase hover:bg-[#C19B2A] transition-all"
+                        style="box-shadow: -7px 4px 8px rgba(0, 0, 0, 1.6); font-weight: 900; font-family: 'Bangla Sangam MN', -apple-system, BlinkMacSystemFont, sans-serif;">
                         Make a Booking
-                    </button>
+                    </a>
                 </div>
             </div>
 
             <!-- Second Row: Navigation Menu -->
             <div class="flex justify-end nav-wrapper">
-                <nav class="flex items-center space-x-6 text-white text-base uppercase">
+                <nav class="flex items-center space-x-1 md:space-x-2 lg:space-x-3 xl:space-x-6 text-white text-base uppercase">
                     <!-- About -->
                     <div class="has-dropdown">
                         <a href="#about" class="nav-link hover:text-[#a29061]">ABOUT</a>
                         <div class="dropdown-content">
-                            <a href="#">MEET MR AYOUBI</a>
-                            <a href="#">CONSULTANTS</a>
-                            <a href="#">BLOG</a>
-                            <a href="#">MEDIA</a>
-                            <a href="#">MEMBERSHIPS</a>
-                            <a href="#">NEWS & EVENTS</a>
-                            <a href="#">TESTIMONIALS</a>
+                            <a href="https://www.lmaclinic.com/ayham-al-ayoubi">MEET MR AYOUBI</a>
+                            <a href="https://www.lmaclinic.com/consultants">CONSULTANTS</a>
+                            <a href="https://www.lmaclinic.com/lma/dr-ayoubi-blog" target="_blank">BLOG</a>
+                            <a href="https://www.lmaclinic.com/lma/us-in-media" target="_blank">MEDIA</a>
+                            <a href="https://www.lmaclinic.com/medical-links">MEMBERSHIPS</a>
+                            <a href="https://www.lmaclinic.com/lma/news-events" target="_blank">NEWS & EVENTS</a>
+                            <a href="https://www.lmaclinic.com/lma/testimonials" target="_blank">TESTIMONIALS</a>
                         </div>
                     </div>
 
@@ -717,9 +790,17 @@
                     <div class="has-dropdown">
                         <a href="#smartlipo" class="nav-link hover:text-[#a29061]">SMARTLIPO</a>
                         <div class="dropdown-content">
-                            <a href="#">SMARTLIPO OVERVIEW</a>
-                            <a href="#">AREAS TREATED</a>
-                            <a href="#">BENEFITS</a>
+                            <a href="https://www.lmaclinic.com/smartlipo">SMARTLIPO</a>
+                            <a href="https://www.lmaclinic.com/photos-smartlipo">BEFORE AND AFTER PHOTOS</a>
+                            <a href="https://www.lmaclinic.com/videos#smartlipo">VIDEOS</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-laser-assisted-liposuction-all-types">ALL TYPES OF SMARTLIPO</a>
+                            <a href="https://www.lmaclinic.com/step-step-smartlipo">STEP BY STEP SMARTLIPO</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-for-men">SMARTLIPO FOR MEN</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-gynaecomastia">SMARTLIPO GYNAECOMASTIA</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-laser-excessive-sweating">SMARTLIPO FOR SWEATING</a>
+                            <a href="https://www.lmaclinic.com/laser-breast-lifting">SMARTLIPO BREAST LIFTING</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-e-book">MR AYOUBI'S SMARTLIPO E-BOOK</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-related-articles">SMARTLIPO RELATED MEDICAL ARTICLES</a>
                         </div>
                     </div>
 
@@ -727,9 +808,10 @@
                     <div class="has-dropdown">
                         <a href="#cellulaze" class="nav-link hover:text-[#a29061]">CELLULAZE</a>
                         <div class="dropdown-content">
-                            <a href="#">CELLULAZE OVERVIEW</a>
-                            <a href="#">HOW IT WORKS</a>
-                            <a href="#">RESULTS</a>
+                            <a href="https://www.lmaclinic.com/cellulaze">CELLULAZE</a>
+                            <a href="https://www.lmaclinic.com/photos-cellulaze">BEFORE AND AFTER PHOTOS</a>
+                            <a href="https://www.lmaclinic.com/videos#cellulaze">VIDEOS</a>
+                            <a href="https://www.lmaclinic.com/how-does-cellulaze-work">STEP BY STEP CELLULAZE</a>
                         </div>
                     </div>
 
@@ -737,9 +819,13 @@
                     <div class="has-dropdown">
                         <a href="#sculptra" class="nav-link hover:text-[#a29061]">SCULPTRA</a>
                         <div class="dropdown-content">
-                            <a href="#">SCULPTRA FACE</a>
-                            <a href="#">SCULPTRA BODY</a>
-                            <a href="#">SCULPTRA BUTTOCKS</a>
+                            <a href="https://www.lmaclinic.com/sculptra">SCULPTRA</a>
+                            <a href="https://www.lmaclinic.com/photos-sculptra">BEFORE AND AFTER PHOTOS</a>
+                            <a href="https://www.lmaclinic.com/videos#sculptra">VIDEOS</a>
+                            <a href="https://www.lmaclinic.com/sculptra-butt-lift">SCULPTRA BUTT LIFT</a>
+                            <a href="https://www.lmaclinic.com/sculptra-decollete">SCULPTRA DECOLLETE</a>
+                            <a href="https://www.lmaclinic.com/sculptra-hip-dips">SCULPTRA HIP DIPS</a>
+                            <a href="https://www.lmaclinic.com/aging-hands">SCULPTRA FOR AGING HANDS</a>
                         </div>
                     </div>
 
@@ -747,9 +833,12 @@
                     <div class="has-dropdown">
                         <a href="#co2-laser" class="nav-link hover:text-[#a29061]">CO2 LASER</a>
                         <div class="dropdown-content">
-                            <a href="#">CO2 LASER FACE</a>
-                            <a href="#">ACNE SCARS</a>
-                            <a href="#">SKIN RESURFACING</a>
+                            <a href="https://www.lmaclinic.com/co2-laser">CO2 LASER</a>
+                            <a href="https://www.lmaclinic.com/c02-laser-before-and-after">BEFORE & AFTER</a>
+                            <a href="https://www.lmaclinic.com/co2-laser-acne-scars">CO2 LASER FOR ACNE SCAR</a>
+                            <a href="https://www.lmaclinic.com/co2-laser-scar">C02 LASER FOR SCAR REVISION</a>
+                            <a href="https://www.lmaclinic.com/co2-laser-stretch-marks">CO2 LASER FOR STRETCH MARKS</a>
+                            <a href="https://www.lmaclinic.com/co2-laser-wrinkles">CO2 LASER FOR WRINKLES</a>
                         </div>
                     </div>
 
@@ -757,25 +846,29 @@
                     <div class="has-dropdown">
                         <a href="#lanluma" class="nav-link hover:text-[#a29061]">LANLUMA</a>
                         <div class="dropdown-content">
-                            <a href="#">LANLUMA FACE</a>
-                            <a href="#">LANLUMA BUTTOCKS</a>
-                            <a href="#">LANLUMA BODY</a>
+                            <a href="https://www.lmaclinic.com/lanluma">LANLUMA</a>
+                            <a href="https://www.lmaclinic.com/lanluma-abdomen">LANLUMA ABDOMEN</a>
+                            <a href="https://www.lmaclinic.com/lanluma-bum-lift">LANLUMA BUM LIFT</a>
+                            <a href="https://www.lmaclinic.com/lanluma-face">LANLUMA FACE</a>
+                            <a href="https://www.lmaclinic.com/lanluma-hip-dips">LANLUMA FOR HIP DIPS</a>
                         </div>
                     </div>
 
-                    <a href="#before-after" class="nav-link hover:text-[#a29061]">BEFORE & AFTER</a>
+                    <a href="https://www.lmaclinic.com/photo-gallery" class="nav-link hover:text-[#a29061]">BEFORE & AFTER</a>
 
                     <!-- Videos & Media -->
                     <div class="has-dropdown">
                         <a href="#videos" class="nav-link hover:text-[#a29061]">VIDEOS & MEDIA</a>
                         <div class="dropdown-content">
-                            <a href="#">PATIENT VIDEOS</a>
-                            <a href="#">PROCEDURE VIDEOS</a>
-                            <a href="#">MEDIA COVERAGE</a>
+                            <a href="https://www.lmaclinic.com/lma/dr-ayoubi-blog">BLOG</a>
+                            <a href="https://www.lmaclinic.com/lma/news-events">EVENTS</a>
+                            <a href="https://www.lmaclinic.com/lma/us-in-media">MEDIA</a>
+                            <a href="https://www.lmaclinic.com/lma/testimonials">TESTIMONIALS</a>
+                            <a href="https://www.lmaclinic.com/videos">VIDEOS</a>
                         </div>
                     </div>
 
-                    <a href="#contact" class="nav-link hover:text-[#a29061]">CONTACT</a>
+                    <a href="https://www.lmaclinic.com/contact" class="nav-link hover:text-[#a29061]">CONTACT</a>
                 </nav>
             </div>
         </div>
@@ -792,13 +885,13 @@
                             </svg>
                         </button>
                         <div id="about-dropdown" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">MEET MR AYOUBI</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">CONSULTANTS</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">BLOG</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">MEDIA</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">MEMBERSHIPS</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">NEWS & EVENTS</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">TESTIMONIALS</a>
+                            <a href="https://www.lmaclinic.com/ayham-al-ayoubi" class="block py-1 text-xs hover:text-[#A29061]">MEET MR AYOUBI</a>
+                            <a href="https://www.lmaclinic.com/consultants" class="block py-1 text-xs hover:text-[#A29061]">CONSULTANTS</a>
+                            <a href="https://www.lmaclinic.com/lma/dr-ayoubi-blog" target="_blank" class="block py-1 text-xs hover:text-[#A29061]">BLOG</a>
+                            <a href="https://www.lmaclinic.com/lma/us-in-media" target="_blank" class="block py-1 text-xs hover:text-[#A29061]">MEDIA</a>
+                            <a href="https://www.lmaclinic.com/medical-links" class="block py-1 text-xs hover:text-[#A29061]">MEMBERSHIPS</a>
+                            <a href="https://www.lmaclinic.com/lma/news-events" target="_blank" class="block py-1 text-xs hover:text-[#A29061]">NEWS & EVENTS</a>
+                            <a href="https://www.lmaclinic.com/lma/testimonials" target="_blank" class="block py-1 text-xs hover:text-[#A29061]">TESTIMONIALS</a>
                         </div>
                     </div>
 
@@ -959,9 +1052,17 @@
                             </svg>
                         </button>
                         <div id="smartlipo-dropdown" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">SMARTLIPO OVERVIEW</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">AREAS TREATED</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">BENEFITS</a>
+                            <a href="https://www.lmaclinic.com/smartlipo" class="block py-1 text-xs hover:text-[#A29061]">SMARTLIPO</a>
+                            <a href="https://www.lmaclinic.com/photos-smartlipo" class="block py-1 text-xs hover:text-[#A29061]">BEFORE AND AFTER PHOTOS</a>
+                            <a href="https://www.lmaclinic.com/videos#smartlipo" class="block py-1 text-xs hover:text-[#A29061]">VIDEOS</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-laser-assisted-liposuction-all-types" class="block py-1 text-xs hover:text-[#A29061]">ALL TYPES OF SMARTLIPO</a>
+                            <a href="https://www.lmaclinic.com/step-step-smartlipo" class="block py-1 text-xs hover:text-[#A29061]">STEP BY STEP SMARTLIPO</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-for-men" class="block py-1 text-xs hover:text-[#A29061]">SMARTLIPO FOR MEN</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-gynaecomastia" class="block py-1 text-xs hover:text-[#A29061]">SMARTLIPO GYNAECOMASTIA</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-laser-excessive-sweating" class="block py-1 text-xs hover:text-[#A29061]">SMARTLIPO FOR SWEATING</a>
+                            <a href="https://www.lmaclinic.com/laser-breast-lifting" class="block py-1 text-xs hover:text-[#A29061]">SMARTLIPO BREAST LIFTING</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-e-book" class="block py-1 text-xs hover:text-[#A29061]">MR AYOUBI'S SMARTLIPO E-BOOK</a>
+                            <a href="https://www.lmaclinic.com/smartlipo-related-articles" class="block py-1 text-xs hover:text-[#A29061]">SMARTLIPO RELATED MEDICAL ARTICLES</a>
                         </div>
                     </div>
 
@@ -974,9 +1075,10 @@
                             </svg>
                         </button>
                         <div id="cellulaze-dropdown" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">CELLULAZE OVERVIEW</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">HOW IT WORKS</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">RESULTS</a>
+                            <a href="https://www.lmaclinic.com/cellulaze" class="block py-1 text-xs hover:text-[#A29061]">CELLULAZE</a>
+                            <a href="https://www.lmaclinic.com/photos-cellulaze" class="block py-1 text-xs hover:text-[#A29061]">BEFORE AND AFTER PHOTOS</a>
+                            <a href="https://www.lmaclinic.com/videos#cellulaze" class="block py-1 text-xs hover:text-[#A29061]">VIDEOS</a>
+                            <a href="https://www.lmaclinic.com/how-does-cellulaze-work" class="block py-1 text-xs hover:text-[#A29061]">STEP BY STEP CELLULAZE</a>
                         </div>
                     </div>
 
@@ -989,9 +1091,13 @@
                             </svg>
                         </button>
                         <div id="sculptra-dropdown" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA FACE</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA BODY</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA BUTTOCKS</a>
+                            <a href="https://www.lmaclinic.com/sculptra" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA</a>
+                            <a href="https://www.lmaclinic.com/photos-sculptra" class="block py-1 text-xs hover:text-[#A29061]">BEFORE AND AFTER PHOTOS</a>
+                            <a href="https://www.lmaclinic.com/videos#sculptra" class="block py-1 text-xs hover:text-[#A29061]">VIDEOS</a>
+                            <a href="https://www.lmaclinic.com/sculptra-butt-lift" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA BUTT LIFT</a>
+                            <a href="https://www.lmaclinic.com/sculptra-decollete" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA DECOLLETE</a>
+                            <a href="https://www.lmaclinic.com/sculptra-hip-dips" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA HIP DIPS</a>
+                            <a href="https://www.lmaclinic.com/aging-hands" class="block py-1 text-xs hover:text-[#A29061]">SCULPTRA FOR AGING HANDS</a>
                         </div>
                     </div>
 
@@ -1004,9 +1110,12 @@
                             </svg>
                         </button>
                         <div id="co2laser-dropdown" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">CO2 LASER FACE</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">ACNE SCARS</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">SKIN RESURFACING</a>
+                            <a href="https://www.lmaclinic.com/co2-laser" class="block py-1 text-xs hover:text-[#A29061]">CO2 LASER</a>
+                            <a href="https://www.lmaclinic.com/c02-laser-before-and-after" class="block py-1 text-xs hover:text-[#A29061]">BEFORE & AFTER</a>
+                            <a href="https://www.lmaclinic.com/co2-laser-acne-scars" class="block py-1 text-xs hover:text-[#A29061]">CO2 LASER FOR ACNE SCAR</a>
+                            <a href="https://www.lmaclinic.com/co2-laser-scar" class="block py-1 text-xs hover:text-[#A29061]">C02 LASER FOR SCAR REVISION</a>
+                            <a href="https://www.lmaclinic.com/co2-laser-stretch-marks" class="block py-1 text-xs hover:text-[#A29061]">CO2 LASER FOR STRETCH MARKS</a>
+                            <a href="https://www.lmaclinic.com/co2-laser-wrinkles" class="block py-1 text-xs hover:text-[#A29061]">CO2 LASER FOR WRINKLES</a>
                         </div>
                     </div>
 
@@ -1019,13 +1128,15 @@
                             </svg>
                         </button>
                         <div id="lanluma-dropdown" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA FACE</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA BUTTOCKS</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA BODY</a>
+                            <a href="https://www.lmaclinic.com/lanluma" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA</a>
+                            <a href="https://www.lmaclinic.com/lanluma-abdomen" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA ABDOMEN</a>
+                            <a href="https://www.lmaclinic.com/lanluma-bum-lift" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA BUM LIFT</a>
+                            <a href="https://www.lmaclinic.com/lanluma-face" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA FACE</a>
+                            <a href="https://www.lmaclinic.com/lanluma-hip-dips" class="block py-1 text-xs hover:text-[#A29061]">LANLUMA FOR HIP DIPS</a>
                         </div>
                     </div>
 
-                    <a href="#before-after" class="block py-2 hover:text-[#A29061]">BEFORE & AFTER</a>
+                    <a href="https://www.lmaclinic.com/photo-gallery" class="block py-2 hover:text-[#A29061]">BEFORE & AFTER</a>
 
                     <!-- Videos & Media Mobile -->
                     <div class="mobile-dropdown">
@@ -1036,13 +1147,15 @@
                             </svg>
                         </button>
                         <div id="videos-dropdown" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">PATIENT VIDEOS</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">PROCEDURE VIDEOS</a>
-                            <a href="#" class="block py-1 text-xs hover:text-[#A29061]">MEDIA COVERAGE</a>
+                            <a href="https://www.lmaclinic.com/lma/dr-ayoubi-blog" class="block py-1 text-xs hover:text-[#A29061]">BLOG</a>
+                            <a href="https://www.lmaclinic.com/lma/news-events" class="block py-1 text-xs hover:text-[#A29061]">EVENTS</a>
+                            <a href="https://www.lmaclinic.com/lma/us-in-media" class="block py-1 text-xs hover:text-[#A29061]">MEDIA</a>
+                            <a href="https://www.lmaclinic.com/lma/testimonials" class="block py-1 text-xs hover:text-[#A29061]">TESTIMONIALS</a>
+                            <a href="https://www.lmaclinic.com/videos" class="block py-1 text-xs hover:text-[#A29061]">VIDEOS</a>
                         </div>
                     </div>
 
-                    <a href="#contact" class="block py-2 hover:text-[#A29061]">CONTACT</a>
+                    <a href="https://www.lmaclinic.com/contact" class="block py-2 hover:text-[#A29061] uppercase">CONTACT</a>
                 </nav>
         </div>
     </header>
@@ -1063,7 +1176,7 @@
                             PRESERVING NATURAL<br>
                             BEAUTY"
                         </h1>
-                        <p class="hero-subtitle mb-2 hidden md:block" style="font-weight: 700; font-size: 22px;">Mr Ayham Al-Ayoubi</p>
+                        <p class="hero-subtitle mb-1 hidden md:block" style="font-weight: 700; font-size: 22px;">Mr Ayham Al-Ayoubi</p>
                         <p class="hero-subtitle hidden md:block">3rd Generation ENT, Facial Plastic & Laser Surgeon</p>
                     </div>
                 </div>
@@ -1078,12 +1191,14 @@
             </picture>
             <div class="absolute inset-0">
                 <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-end pb-24 md:pb-0">
-                    <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left">
+                    <div class="max-w-2xl text-black mt-0 md:mt-[4rem] text-center md:text-left">
                         <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug">
-                            "EXPERT AESTHETIC<br>
-                            TREATMENTS"
+                            "I'm so pleased to see the<br class="hidden lg:inline">
+                            amazing<br class="lg:hidden"> results of Dr. Ayham
+                            Al-Ayoubi's<br class="lg:hidden"> <br class="hidden lg:inline">Treatments"
                         </h1>
-                        <p class="hero-subtitle hidden md:block">Advanced Solutions for Natural Beauty</p>
+                        <p class="hero-subtitle mb-1" style="font-weight: 700; font-size: 22px;">HRH Princess</p>
+                        <p class="hero-subtitle">Basma Bint Saud Bint Abdul Aziz</p>
                     </div>
                 </div>
             </div>
@@ -1098,11 +1213,12 @@
             <div class="absolute inset-0">
                 <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-end pb-24 md:pb-0">
                     <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left">
-                        <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug">
-                            "TRANSFORMATIVE<br>
-                            RESULTS"
+                        <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug" style="font-size: clamp(1.4rem, 3.8vw, 3.56rem);">
+                            "Mr. Ayoubi, an exuberant<br class="hidden lg:inline">
+                            gentleman<br class="lg:hidden"> with a<br class="hidden lg:inline"> reassuring
+                            bedside<br class="hidden lg:inline"> manner. He<br class="lg:hidden"> is a pioneer of<br class="hidden lg:inline"> Smartlipo in Britain"
                         </h1>
-                        <p class="hero-subtitle hidden md:block">Cutting-Edge Medical Aesthetics</p>
+                        <p class="hero-subtitle mb-1" style="font-weight: 700; font-size: 22px;">Sarah Vine for <span style="color: #c8a64d;">The Times</span></p>
                     </div>
                 </div>
             </div>
@@ -1119,12 +1235,12 @@
         </button>
 
         <!-- Mobile Booking Button - Full Width at Bottom -->
-        <div class="lg:hidden absolute bottom-0 left-0 right-0 z-20 p-4">
-            <button
-                class="w-full bg-[#a29061] text-white py-4 text-base uppercase font-bold hover:bg-[#C19B2A] transition-all border border-white"
-                style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+        <div class="lg:hidden absolute bottom-0 left-0 right-0 z-20 bg-[#b4975b] py-4 px-24">
+            <a href="https://www.lmaclinic.com/contact"
+                class="block w-full bg-transparent text-white py-2 text-base uppercase font-bold hover:bg-white/10 transition-all border-2 border-white text-center"
+                style="font-family: 'Bangla Sangam MN', -apple-system, BlinkMacSystemFont, sans-serif;">
                 Book a Consultation
-            </button>
+            </a>
         </div>
     </div>
 
@@ -1163,7 +1279,9 @@
 
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
             menu.classList.toggle('hidden');
+            hamburgerBtn.classList.toggle('hamburger-open');
         }
 
         function toggleMobileDropdown(id) {
