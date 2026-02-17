@@ -214,7 +214,7 @@
 
         @media (max-width: 1366px) {
             header img {
-                height: 5.75rem;
+                height: 100px !important;
             }
         }
 
@@ -234,7 +234,31 @@
         .content-container {
             max-width: 1440px;
             margin: 0 auto;
-            padding: 0 1rem;
+            padding: 0 2rem;
+        }
+
+        @media (min-width: 1024px) {
+            .content-container {
+                padding: 0 3rem;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .content-container {
+                padding: 0 4rem;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .content-container {
+                padding: 0 5rem;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .content-container {
+                padding: 0 6rem;
+            }
         }
 
         /* Slider text responsive adjustments */
@@ -559,7 +583,7 @@
                 font-size: calc(clamp(1.5rem, 4vw, 3.75rem) + 2px) !important;
             }
             .slide:nth-child(1) .hero-text {
-                font-size: calc(clamp(1.5rem, 4vw, 3.75rem) + 16px) !important;
+                font-size: calc(clamp(1.5rem, 4vw, 3.75rem) + 8px) !important;
             }
             .slide .hero-subtitle {
                 font-size: calc(18px + 2px) !important;
@@ -574,6 +598,10 @@
                 gap: 0px;
             }
         }
+
+        .leading-snug {
+    line-height: 1.2 !important;
+}
 
 
     </style>
@@ -615,7 +643,7 @@
                 <!-- Logo -->
                 <div class="flex items-center">
                     <img src="images/updatelogo.webp" alt="London Medical & Aesthetic Clinic"
-                        class="h-16 md:h-28 w-auto" style="position: relative; top: 18px;">
+                        class="h-16 md:h-[120px] w-auto" style="position: relative; top: 18px;">
                 </div>
 
                 <!-- Contact and CTA - Desktop -->
@@ -1171,13 +1199,11 @@
             <div class="absolute inset-0">
                 <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-start pb-24 md:pb-0">
                     <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left">
-                        <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug">
-                            "ENHANCING... BUT<br>
-                            PRESERVING NATURAL<br>
-                            BEAUTY"
+                        <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug" style="font-size: clamp(1.5rem, 4vw, 3.75rem);">
+                            "ENHANCING... BUT PRESERVING NATURAL BEAUTY"
                         </h1>
-                        <p class="hero-subtitle mb-1 hidden md:block" style="font-weight: 700; font-size: 22px;">Mr Ayham Al-Ayoubi</p>
-                        <p class="hero-subtitle hidden md:block">3rd Generation ENT, Facial Plastic & Laser Surgeon</p>
+                        <p class="hero-subtitle mb-1 hidden md:block" style="font-weight: 700; font-size: clamp(14px, 2vw, 22px);">Mr Ayham Al-Ayoubi</p>
+                        <p class="hero-subtitle hidden md:block" style="font-size: clamp(12px, 1.8vw, 18px);">3rd Generation ENT, Facial Plastic & Laser Surgeon</p>
                     </div>
                 </div>
             </div>
@@ -1191,14 +1217,13 @@
             </picture>
             <div class="absolute inset-0">
                 <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-end pb-24 md:pb-0">
-                    <div class="max-w-2xl text-black mt-0 md:mt-[4rem] text-center md:text-left">
-                        <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug">
+                    <div class="max-w-2xl text-black mt-0 md:mt-[4rem] text-center md:text-left" style="margin-bottom: 6rem;">
+                        <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug" style="font-size: clamp(1.5rem, 4vw, 3.75rem);">
                             "I'm so pleased to see the<br class="hidden lg:inline">
-                            amazing<br class="lg:hidden"> results of Dr. Ayham
-                            Al-Ayoubi's<br class="lg:hidden"> <br class="hidden lg:inline">Treatments"
+                            amazing results of Dr. Ayham Al-Ayoubi's<br class="hidden lg:inline">Treatments"
                         </h1>
-                        <p class="hero-subtitle mb-1" style="font-weight: 700; font-size: 22px;">HRH Princess</p>
-                        <p class="hero-subtitle">Basma Bint Saud Bint Abdul Aziz</p>
+                        <p class="hero-subtitle mb-1" style="font-weight: 700; font-size: clamp(14px, 2vw, 22px);">HRH Princess</p>
+                        <p class="hero-subtitle" style="font-size: clamp(12px, 1.8vw, 18px);">Basma Bint Saud Bint Abdul Aziz</p>
                     </div>
                 </div>
             </div>
@@ -1212,13 +1237,13 @@
             </picture>
             <div class="absolute inset-0">
                 <div class="content-container h-full flex items-center md:items-center items-end justify-center md:justify-end pb-24 md:pb-0">
-                    <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left">
+                    <div class="max-w-2xl text-white mt-0 md:mt-[4rem] text-center md:text-left" style="margin-bottom: 6rem;">
                         <h1 class="hero-text text-4xl md:text-6xl font-light mb-6 leading-snug" style="font-size: clamp(1.4rem, 3.8vw, 3.56rem);">
                             "Mr. Ayoubi, an exuberant<br class="hidden lg:inline">
-                            gentleman<br class="lg:hidden"> with a<br class="hidden lg:inline"> reassuring
-                            bedside<br class="hidden lg:inline"> manner. He<br class="lg:hidden"> is a pioneer of<br class="hidden lg:inline"> Smartlipo in Britain"
+                            gentleman with a<br class="hidden lg:inline"> reassuring
+                            bedside<br class="hidden lg:inline"> manner. He is a pioneer of<br class="hidden lg:inline"> Smartlipo in Britain"
                         </h1>
-                        <p class="hero-subtitle mb-1" style="font-weight: 700; font-size: 22px;">Sarah Vine for <span style="color: #c8a64d;">The Times</span></p>
+                        <p class="hero-subtitle mb-1" style="font-weight: 700; font-size: clamp(14px, 2vw, 22px);">Sarah Vine for <span style="color: #c8a64d;">The Times</span></p>
                     </div>
                 </div>
             </div>
@@ -1235,10 +1260,10 @@
         </button>
 
         <!-- Mobile Booking Button - Full Width at Bottom -->
-        <div class="lg:hidden absolute bottom-0 left-0 right-0 z-20 bg-[#b4975b] py-4 px-24">
+        <div class="lg:hidden absolute bottom-0 left-0 right-0 z-20 bg-[#b4975b] py-6 px-6">
             <a href="https://www.lmaclinic.com/contact"
-                class="block w-full bg-transparent text-white py-2 text-base uppercase font-bold hover:bg-white/10 transition-all border-2 border-white text-center"
-                style="font-family: 'Bangla Sangam MN', -apple-system, BlinkMacSystemFont, sans-serif;">
+                class="block w-full bg-transparent text-white py-2 text-base uppercase hover:bg-white/10 transition-all border-2 border-white text-center"
+                style="font-family: 'Bangla Sangam MN', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 700;">
                 Book a Consultation
             </a>
         </div>
