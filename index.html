@@ -270,10 +270,13 @@
 
         @media (max-width: 1366px) {
             .hero-text {
-                font-size: 3.25rem;
+                font-size: 45px;
             }
             .hero-subtitle {
                 font-size: 16px;
+            }
+            .hero-subtitle[style*="font-weight: 700"] {
+                font-size: 18px;
             }
         }
 
@@ -596,14 +599,45 @@
             .slide .hero-subtitle {
                 font-size: calc(18px + 2px) !important;
             }
+            .slide:nth-child(2) .hero-text,
+            .slide:nth-child(3) .hero-text {
+                font-size: 20px !important;
+            }
+            .slide:nth-child(2) .hero-subtitle,
+            .slide:nth-child(3) .hero-subtitle {
+                font-size: 16px !important;
+                text-transform: uppercase;
+            }
+            .slide:nth-child(2) .hero-subtitle.mb-1,
+            .slide:nth-child(3) .hero-subtitle.mb-1 {
+                margin-bottom: 0.25rem !important;
+            }
         }
 
-        @media (max-width: 1366px) {
+        @media (min-width: 769px) and (max-width: 1366px) {
             .md\:h-28 {
                 height: 6rem !important;
             }
             header nav {
                 gap: 0px;
+            }
+            .slide .hero-text {
+                font-size: 45px !important;
+            }
+            .slide .hero-text{
+                padding: 0 20px;
+            }
+            .slide .hero-subtitle[style*="font-weight: 700"] {
+                font-size: 18px !important;
+                 padding: 0 20px;
+            }
+            .slide .hero-subtitle:not([style*="font-weight: 700"]) {
+                font-size: 16px !important;
+                 padding: 0 20px;
+            }
+            header .text-lg,
+            header a[href*="contact"] {
+                font-size: 16px !important;
             }
         }
 
@@ -1202,6 +1236,7 @@
         <div class="slide active h-screen lg:h-[800px] relative">
             <picture>
                 <source media="(max-width: 768px)" srcset="images/slide01-mobile.webp">
+                <source media="(max-width: 1366px)" srcset="images/Dr. Ayoubi 01.webp">
                 <img src="images/slider011.webp" alt="Dr. Ayham Al-Ayoubi" class="w-full h-full object-cover">
             </picture>
             <div class="absolute inset-0">
@@ -1221,6 +1256,7 @@
         <div class="slide h-screen lg:h-[800px] relative">
             <picture>
                 <source media="(max-width: 768px)" srcset="images/slide02-mobile.webp">
+                <source media="(max-width: 1366px)" srcset="images/HRH Princess 01.webp">
                 <img src="images/slide02.webp" alt="Slide 2" class="w-full h-full object-cover">
             </picture>
             <div class="absolute inset-0">
@@ -1241,6 +1277,7 @@
         <div class="slide h-screen lg:h-[800px] relative">
             <picture>
                 <source media="(max-width: 768px)" srcset="images/slide03-mobile.webp">
+                <source media="(max-width: 1366px)" srcset="images/The times 01.webp">
                 <img src="images/slider03.webp" alt="Slide 3" class="w-full h-full object-cover">
             </picture>
             <div class="absolute inset-0">
